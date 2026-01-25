@@ -11,23 +11,35 @@ seed_pkgs <- seed_pkgs[nzchar(trimws(seed_pkgs))]
 
 cat(sprintf("Seed packages: %s\n", paste(seed_pkgs, collapse = ", ")))
 
+# For dependency resolution - use available.packages()
+ap <- available.packages(repos = "https://cloud.r-project.org")
+
+revdeps <- tools::package_dependencies(
+  seed_pkgs, db = ap, reverse = TRUE, recursive = FALSE,
+  which = c("Depends", "Imports", "LinkingTo")
+)
+
+# For state tracking (MD5sum) - use CRAN_package_db()
+db <- tools::CRAN_package_db()[, c("Package", "Version", "MD5sum")]
 # Get current CRAN state
 db <- tools::CRAN_package_db()[, c("Package", "Version", "MD5sum")]
 
-# Build watchlist: seeds + their reverse deps
-revdeps <- unlist(tools::package_dependencies(
-  seed_pkgs, db = db, reverse = TRUE, recursive = FALSE,
-  which = c("Depends", "Imports", "LinkingTo")
-))
-watchlist <- unique(c(seed_pkgs, revdeps))
+watchlist <- sort(unique(c(seed_pkgs, unlist(revdeps))))
 
 cat(sprintf("Watchlist: %d packages\n", length(watchlist)))
 
 # Compare to cached state
-cached <- tryCatch(
-  fromJSON("config/cran_state.json"),
-  error = function(e) data.frame(Package = character(), MD5sum = character())
-)
+cached <- tryCatch({
+  x <- fromJSON("config/cran_state.json")
+  # Handle empty list from initial []
+  if (length(x) == 0) {
+    data.frame(Package = character(), MD5sum = character())
+  } else {
+    as.data.frame(x)
+  }
+}, error = function(e) {
+  data.frame(Package = character(), MD5sum = character())
+})
 
 current <- db[db$Package %in% watchlist, ]
 
@@ -68,6 +80,9 @@ if (nzchar(github_output)) {
 
 # Always update state file
 write_json(as.data.frame(current), "config/cran_state.json", pretty = TRUE)
+
+
+cat(sprintf("Watchlist: %d packages\n", length(watchlist)))
 
 # Write test manifest
 write.csv(
