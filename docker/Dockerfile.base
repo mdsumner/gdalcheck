@@ -3,30 +3,17 @@ FROM ghcr.io/osgeo/gdal:ubuntu-full-latest
 ENV DEBIAN_FRONTEND=noninteractive
 ENV R_LIBS_SITE=/usr/local/lib/R/site-library
 
+# Core R and essential build tools
 RUN apt-get update && apt-get install -y --no-install-recommends \
     r-base-dev \
-    libcurl4-openssl-dev \
-    libssl-dev \
-    libxml2-dev \
-    libudunits2-dev \
-    libfontconfig1-dev \
-    libfreetype6-dev \
-    libfribidi-dev \
-    libharfbuzz-dev \
-    libjpeg-dev \
-    libpng-dev \
-    libtiff-dev \
-    libsqlite3-dev \
-    libpq-dev \
-    libmariadb-dev \
-    libnetcdf-dev \
-    libhdf5-dev \
-    libprotobuf-dev \
-    protobuf-compiler \
-    libjq-dev \
     pandoc \
     git \
     && rm -rf /var/lib/apt/lists/*
+
+# Generated system requirements (from pkgdepends)
+# This file is created by scripts/R/generate_sysreqs.R
+COPY config/sysreqs.txt /tmp/sysreqs.txt
+RUN bash -c "$(cat /tmp/sysreqs.txt)" && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p ${R_LIBS_SITE} && chmod 777 ${R_LIBS_SITE}
 
