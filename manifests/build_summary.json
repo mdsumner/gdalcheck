@@ -1,0 +1,9 @@
+{
+  "built_at": "2026-01-25 03:00:51.283623",
+  "seed_packages": ["gdalcubes", "gdalraster", "raster", "vapour"],
+  "test_packages": 236,
+  "cached_packages": 861,
+  "failed_packages": 0,
+  "num_layers": 1,
+  "total_size_gb": 1.42
+}
