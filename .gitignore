@@ -7,7 +7,7 @@ cache-out/
 .Rdata
 .RData
 *.Rproj.user
-
+*.Rproj
 # OS
 .DS_Store
 Thumbs.db

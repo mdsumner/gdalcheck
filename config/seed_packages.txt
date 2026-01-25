@@ -1,5 +1,4 @@
-sf
-terra
+gdalcubes
 gdalraster
+raster
 vapour
-stars
