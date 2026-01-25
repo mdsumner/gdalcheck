@@ -1,4 +1,7 @@
 gdalcubes
 gdalraster
 raster
+sf
+stars
+terra
 vapour
