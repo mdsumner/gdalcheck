@@ -1,11 +1,18 @@
 apt-get update && apt-get install -y --no-install-recommends \
+    automake \
     cargo \
     chromium \
     cmake \
+    coinor-libsymphony-dev \
+    coinor-symphony \
     default-jdk \
     git \
     gsfonts \
+    jags \
     libabsl-dev \
+    libarchive-dev \
+    libavfilter-dev \
+    libbz2-dev \
     libcairo2-dev \
     libcurl4-openssl-dev \
     libfftw3-dev \
@@ -24,6 +31,7 @@ apt-get update && apt-get install -y --no-install-recommends \
     libimage-exiftool-perl \
     libjpeg-dev \
     libjq-dev \
+    liblzma-dev \
     libmagic-dev \
     libmagick++-dev \
     libmpfr-dev \
@@ -34,7 +42,10 @@ apt-get update && apt-get install -y --no-install-recommends \
     libpq-dev \
     libprotobuf-dev \
     libprotoc-dev \
+    librdf0-dev \
     libsecret-1-dev \
+    libsndfile1-dev \
+    libsodium-dev \
     libssl-dev \
     libtiff-dev \
     libudunits2-dev \
@@ -44,8 +55,16 @@ apt-get update && apt-get install -y --no-install-recommends \
     libzstd-dev \
     make \
     pandoc \
+    perl \
+    pkg-config \
     protobuf-compiler \
     python3 \
     rustc \
+    saga \
+    tcl \
     texlive \
+    tk \
+    tk-dev \
+    tk-table \
+    xz-utils \
     zlib1g-dev
