@@ -3,15 +3,23 @@ FROM ghcr.io/osgeo/gdal:ubuntu-full-latest
 ENV DEBIAN_FRONTEND=noninteractive
 ENV R_LIBS_SITE=/usr/local/lib/R/site-library
 
-# Core R and essential build tools
+# Add CRAN repository for latest R
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    software-properties-common \
+    dirmngr \
+    wget \
+    && wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc \
+    && add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/" \
+    && apt-get update
+
+# Core R and essential build tools
+RUN apt-get install -y --no-install-recommends \
     r-base-dev \
     pandoc \
     git \
     && rm -rf /var/lib/apt/lists/*
 
 # Generated system requirements (from pkgdepends)
-# This file is created by scripts/R/generate_sysreqs.R
 COPY config/sysreqs.txt /tmp/sysreqs.txt
 RUN bash -c "$(cat /tmp/sysreqs.txt)" && rm -rf /var/lib/apt/lists/*
 
@@ -20,5 +28,6 @@ RUN mkdir -p ${R_LIBS_SITE} && chmod 777 ${R_LIBS_SITE}
 # Install R infrastructure packages
 RUN Rscript -e "install.packages(c('remotes', 'jsonlite', 'rcmdcheck'), repos='https://cloud.r-project.org', Ncpus=2)"
 
-# Record GDAL version
-RUN gdalinfo --version > /opt/gdal_version.txt
+# Record versions
+RUN gdalinfo --version > /opt/gdal_version.txt && \
+    R --version | head -1 >> /opt/gdal_version.txt
