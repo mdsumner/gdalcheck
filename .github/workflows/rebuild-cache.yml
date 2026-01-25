@@ -1,0 +1,138 @@
+name: Rebuild binary cache
+
+on:
+  workflow_dispatch:
+    inputs:
+      changed_packages:
+        description: 'Packages that triggered rebuild'
+        required: false
+        default: 'manual trigger'
+  workflow_call:
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}/gdalcheck
+
+jobs:
+  build-cache:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Free disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /usr/local/lib/android
+          sudo rm -rf /opt/ghc
+          sudo rm -rf /opt/hostedtoolcache
+          df -h
+      
+      - name: Get GDAL dev version
+        id: gdal-version
+        run: |
+          VERSION=$(docker run --rm osgeo/gdal:ubuntu-full-latest gdalinfo --version | grep -oP '\d+\.\d+\.\d+-dev|\d+\.\d+\.\d+' | head -1 || echo "dev")
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
+          echo "GDAL version: ${VERSION}"
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      
+      - name: Login to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Build base image
+        uses: docker/build-push-action@v5
+        with:
+          context: docker
+          file: docker/Dockerfile.base
+          push: true
+          tags: |
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-base:latest
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-base:gdal-${{ steps.gdal-version.outputs.version }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+      
+      - name: Build binary cache
+        run: |
+          mkdir -p cache-out
+          
+          docker run --rm \
+            -v ${{ github.workspace }}/config:/config:ro \
+            -v ${{ github.workspace }}/scripts/R:/scripts:ro \
+            -v ${{ github.workspace }}/cache-out:/output \
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-base:latest \
+            Rscript /scripts/build_binary_cache.R /output 6
+          
+          echo "=== Layer summary ==="
+          cat cache-out/layer_manifest.csv
+          echo ""
+          echo "=== Directory sizes ==="
+          du -sh cache-out/layer* || true
+      
+      - name: Generate Dockerfile
+        run: |
+          chmod +x scripts/generate_dockerfile.sh
+          ./scripts/generate_dockerfile.sh cache-out docker/Dockerfile.cached
+          
+          echo "=== Generated Dockerfile ==="
+          cat docker/Dockerfile.cached
+      
+      - name: Build cached image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: docker/Dockerfile.cached
+          push: true
+          tags: |
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:gdal-${{ steps.gdal-version.outputs.version }}
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+          build-args: |
+            BASE_IMAGE=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-base:latest
+      
+      - name: Commit manifests
+        run: |
+          mkdir -p manifests
+          cp cache-out/test_manifest.csv manifests/
+          cp cache-out/layer_manifest.csv manifests/
+          cp cache-out/package_manifest.csv manifests/
+          cp cache-out/build_summary.json manifests/
+          [ -f cache-out/failed_packages.txt ] && cp cache-out/failed_packages.txt manifests/ || true
+          
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add manifests/
+          git diff --staged --quiet || git commit -m "Update cache manifests [skip ci]"
+          git push
+      
+      - name: Summary
+        run: |
+          echo "## Cache Rebuild Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**GDAL version:** ${{ steps.gdal-version.outputs.version }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Triggered by:** ${{ inputs.changed_packages || 'manual' }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Layers" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          cat cache-out/layer_manifest.csv >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Test manifest:** $(wc -l < cache-out/test_manifest.csv) packages" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Image:** \`${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest\`" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f cache-out/failed_packages.txt ]; then
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### ⚠️ Failed packages" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            cat cache-out/failed_packages.txt >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          fi

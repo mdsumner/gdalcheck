@@ -1,0 +1,24 @@
+# Build artifacts
+cache-out/
+*.tar.gz
+
+# R
+.Rhistory
+.Rdata
+.RData
+*.Rproj.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Local config
+.env
+.last_sha
+.Rproj.user
+.httr-oauth
+.quarto

@@ -1,0 +1,37 @@
+FROM osgeo/gdal:ubuntu-full-latest
+
+ENV DEBIAN_FRONTEND=noninteractive
+ENV R_LIBS_SITE=/usr/local/lib/R/site-library
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    r-base-dev \
+    libcurl4-openssl-dev \
+    libssl-dev \
+    libxml2-dev \
+    libudunits2-dev \
+    libfontconfig1-dev \
+    libfreetype6-dev \
+    libfribidi-dev \
+    libharfbuzz-dev \
+    libjpeg-dev \
+    libpng-dev \
+    libtiff-dev \
+    libsqlite3-dev \
+    libpq-dev \
+    libmariadb-dev \
+    libnetcdf-dev \
+    libhdf5-dev \
+    libprotobuf-dev \
+    protobuf-compiler \
+    libjq-dev \
+    pandoc \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN mkdir -p ${R_LIBS_SITE} && chmod 777 ${R_LIBS_SITE}
+
+# Install R infrastructure packages
+RUN Rscript -e "install.packages(c('remotes', 'jsonlite', 'rcmdcheck'), repos='https://cloud.r-project.org', Ncpus=2)"
+
+# Record GDAL version
+RUN gdalinfo --version > /opt/gdal_version.txt

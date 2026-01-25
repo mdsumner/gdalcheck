@@ -1,0 +1,7 @@
+# Results
+
+Check results are pushed here by the runner.
+
+Each run creates a subdirectory with:
+- `summary.json` - pass/fail counts
+- `all_results.csv` - per-package results
