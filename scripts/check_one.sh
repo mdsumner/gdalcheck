@@ -18,14 +18,8 @@ results_dir <- "$RESULTS_DIR"
 
 library(jsonlite)
 
-# Get GDAL version
-gdal_version <- tryCatch(
-  terra::gdal_version(),
-  error = function(e) tryCatch(
-    sf::sf_extSoftVersion()["GDAL"],
-    error = function(e) "unknown"
-  )
-)
+# Get GDAL version — gdalraster is always present in gdal-r-full
+gdal_version <- gdalraster::gdal_version()[4]
 
 result <- list(
   package = pkg,
