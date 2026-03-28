@@ -1,65 +1,42 @@
-apt-get update && apt-get install -y --no-install-recommends \
+apt-get update -qq && apt-get install -y --no-install-recommends \
     automake \
-    cargo \
     chromium \
-    cmake \
     coinor-libsymphony-dev \
     coinor-symphony \
     default-jdk \
-    git \
     gsfonts \
     jags \
-    libabsl-dev \
     libarchive-dev \
-    libavfilter-dev \
     libbz2-dev \
     libcairo2-dev \
-    libcurl4-openssl-dev \
     libfftw3-dev \
-    libfontconfig1-dev \
-    libfreetype6-dev \
-    libfribidi-dev \
     libgit2-dev \
     libgl1-mesa-dev \
     libglpk-dev \
     libglu1-mesa-dev \
     libgmp3-dev \
     libgsl0-dev \
-    libharfbuzz-dev \
-    libhdf5-dev \
     libicu-dev \
     libimage-exiftool-perl \
-    libjpeg-dev \
     libjq-dev \
-    liblzma-dev \
     libmagic-dev \
     libmagick++-dev \
     libmpfr-dev \
-    libnetcdf-dev \
     libnode-dev \
-    libpng-dev \
     libpoppler-cpp-dev \
-    libpq-dev \
     libprotobuf-dev \
     libprotoc-dev \
     librdf0-dev \
     libsecret-1-dev \
     libsndfile1-dev \
     libsodium-dev \
-    libssl-dev \
-    libtiff-dev \
-    libudunits2-dev \
-    libwebp-dev \
+    libuv1-dev \
     libx11-dev \
-    libxml2-dev \
-    libzstd-dev \
     make \
-    pandoc \
     perl \
-    pkg-config \
+    poppler-data \
     protobuf-compiler \
     python3 \
-    rustc \
     saga \
     tcl \
     texlive \

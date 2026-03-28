@@ -1,9 +1,9 @@
 {
-  "built_at": "2026-01-25 06:03:24.482475",
+  "built_at": "2026-03-28 08:46:42.203316",
   "seed_packages": ["gdalcubes", "gdalraster", "raster", "sf", "stars", "terra", "vapour"],
-  "test_packages": 1048,
-  "cached_packages": 1549,
+  "test_packages": 1067,
+  "cached_packages": 1543,
   "failed_packages": 0,
   "num_layers": 1,
-  "total_size_gb": 2.78
+  "total_size_gb": 3.98
 }
