@@ -496,8 +496,8 @@
   },
   {
     "Package": "CDSE",
-    "Version": "0.3.0",
-    "MD5sum": "4b908503d923d9e3e5741c4879dab50a"
+    "Version": "0.3.2",
+    "MD5sum": "9beb76f0abae5d5c3386b6f45ec88c94"
   },
   {
     "Package": "censable",
@@ -681,8 +681,8 @@
   },
   {
     "Package": "CompositionalSR",
-    "Version": "1.1",
-    "MD5sum": "a3d1a55d4abfccfff7023630c528c2ef"
+    "Version": "1.2",
+    "MD5sum": "0bee51566b049b2f62d5e9bbf135fa6b"
   },
   {
     "Package": "concaveman",
@@ -1836,8 +1836,8 @@
   },
   {
     "Package": "giscoR",
-    "Version": "1.0.1",
-    "MD5sum": "4d4d21ae2c8198d7a4dde71a360d27d1"
+    "Version": "1.1.0",
+    "MD5sum": "d63935d7134b95b97d8aa2a9b40b830b"
   },
   {
     "Package": "GISINTEGRATION",
