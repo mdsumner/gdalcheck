@@ -315,6 +315,11 @@
     "MD5sum": "474750bc0edba625351edc1472d1e1a6"
   },
   {
+    "Package": "bioregion",
+    "Version": "1.4.0",
+    "MD5sum": "c58d2aa803c6c20c99ebe3bfdb58fa74"
+  },
+  {
     "Package": "birdring",
     "Version": "1.6",
     "MD5sum": "c7bf5473c389c3d0ff2452031d97f5f7"
@@ -1936,8 +1941,8 @@
   },
   {
     "Package": "gstat",
-    "Version": "2.1-5",
-    "MD5sum": "6b2f92b7b9fbdac5c3760e8fa607be52"
+    "Version": "2.1-6",
+    "MD5sum": "88ec5137199ad12a36f6c2482bb9a23e"
   },
   {
     "Package": "gtfs2emis",
@@ -2293,6 +2298,11 @@
     "Package": "kokudosuuchi",
     "Version": "1.0.0",
     "MD5sum": "36323eeb007a765a811ee26ceff6a915"
+  },
+  {
+    "Package": "kuenm2",
+    "Version": "0.1.2",
+    "MD5sum": "d3a0be3fd8b1a8dd91ad524b34dcd85f"
   },
   {
     "Package": "LabourMarketAreas",
