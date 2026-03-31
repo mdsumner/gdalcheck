@@ -226,8 +226,8 @@
   },
   {
     "Package": "BAT",
-    "Version": "2.11.0",
-    "MD5sum": "0ad3bf1eb9a41850d4a14a6023f64cdb"
+    "Version": "2.11.1",
+    "MD5sum": "b3d33895b9721fd8d3024fc8df9c76e6"
   },
   {
     "Package": "bayesEO",
@@ -610,6 +610,11 @@
     "MD5sum": "5db97fe2b50817588eb0c80511576181"
   },
   {
+    "Package": "climatehealth",
+    "Version": "1.0.0",
+    "MD5sum": "16e1d50bd4ac0b6389b1118aa6c4bebe"
+  },
+  {
     "Package": "climateStability",
     "Version": "0.1.4",
     "MD5sum": "b5fc7219bd271f7f203fd0c8b41c66dc"
@@ -648,11 +653,6 @@
     "Package": "cmsafvis",
     "Version": "1.3.0",
     "MD5sum": "f008e26e29de3a73d1daae46174b6c6e"
-  },
-  {
-    "Package": "cnefetools",
-    "Version": "0.2.3",
-    "MD5sum": "22a429e3b14ebc8561d94311487271ec"
   },
   {
     "Package": "cnmap",
@@ -1051,8 +1051,8 @@
   },
   {
     "Package": "duckspatial",
-    "Version": "0.9.0",
-    "MD5sum": "a7ce8ec0fc5645f7ab134455e194352b"
+    "Version": "1.0.0",
+    "MD5sum": "d03c5adcb9044aee8bd3a72355e993eb"
   },
   {
     "Package": "dwp",
@@ -2156,8 +2156,8 @@
   },
   {
     "Package": "infoxtr",
-    "Version": "0.1",
-    "MD5sum": "f4bfd6832c8a92fd3d2c4fcecc1aa9f4"
+    "Version": "0.2",
+    "MD5sum": "80bf78d493ce7329580791f37bed3f0d"
   },
   {
     "Package": "inlabru",
@@ -2910,6 +2910,11 @@
     "MD5sum": "95fef50d235eff6329ae1b55a46d2e8b"
   },
   {
+    "Package": "MultiscaleSCP",
+    "Version": "0.1.1",
+    "MD5sum": "caddbc51277815064b36cf68ae33c32e"
+  },
+  {
     "Package": "naijR",
     "Version": "0.7.0",
     "MD5sum": "93778ac528e3d3450e3b74bf97ea6916"
@@ -3223,6 +3228,11 @@
     "Package": "pavo",
     "Version": "2.9.0",
     "MD5sum": "5d5c99d58dbaefca67c5ecc31c30e5ee"
+  },
+  {
+    "Package": "pc",
+    "Version": "0.1",
+    "MD5sum": "4b6df7efe00e90a54bd0e4870f7af693"
   },
   {
     "Package": "pct",
@@ -5063,6 +5073,11 @@
     "Package": "trackeRapp",
     "Version": "1.2",
     "MD5sum": "2c2769312f131d283a534b82008bf766"
+  },
+  {
+    "Package": "trafficCAR",
+    "Version": "0.1.1",
+    "MD5sum": "ac91e876bb96219f49ad9ce05ec0085f"
   },
   {
     "Package": "transformr",
