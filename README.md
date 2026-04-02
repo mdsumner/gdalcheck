@@ -1,8 +1,13 @@
 # gdalcheck
 
+NOT YET FUNCTIONAL 
+
+
 Reverse dependency checking for R packages against bleeding-edge GDAL.
 
-## What it does
+## What it could do ...
+
+NOT YET FUNCTIONAL 
 
 1. **Daily CRAN monitoring** — checks for updates to GDAL-dependent packages
 2. **Binary cache building** — pre-compiles ~1500 R packages against the latest GDAL
