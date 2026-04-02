@@ -57,7 +57,7 @@ succeeded <- character()
 for (i in seq_along(cache_pkgs)) {
   pkg <- cache_pkgs[i]
   cat(sprintf("[%d/%d] %s... ", i, length(cache_pkgs), pkg))
-  
+
   tryCatch({
     # Skip if already installed
     if (pkg %in% rownames(installed.packages(lib.loc = lib_dir))) {
@@ -114,7 +114,7 @@ layer_sizes <- numeric()
 for (pkg in names(pkg_sizes)) {
   size <- pkg_sizes[pkg]
   placed <- FALSE
-  
+
   # Try to fit in existing layer
   for (i in seq_along(layers)) {
     if (layer_sizes[i] + size <= max_layer_bytes) {
@@ -124,7 +124,7 @@ for (pkg in names(pkg_sizes)) {
       break
     }
   }
-  
+
   # Create new layer if needed
   if (!placed) {
     layers[[length(layers) + 1]] <- pkg
@@ -144,16 +144,19 @@ cat("\n--- Organizing layer directories ---\n")
 for (i in seq_along(layers)) {
   layer_dir <- file.path(output_dir, sprintf("layer%02d", i))
   dir.create(layer_dir, recursive = TRUE, showWarnings = FALSE)
-  
+
   for (pkg in layers[[i]]) {
     src <- file.path(lib_dir, pkg)
-    dst <- file.path(layer_dir, pkg)
     if (dir.exists(src)) {
-      file.rename(src, dst)
+      success <- file.copy(src, layer_dir, recursive = TRUE)
+      if (success) {
+        unlink(src, recursive = TRUE)
+      } else {
+        cat(sprintf("WARNING: Failed to copy %s\n", pkg))
+      }
     }
   }
 }
-
 # Remove empty lib_all
 unlink(lib_dir, recursive = TRUE)
 
