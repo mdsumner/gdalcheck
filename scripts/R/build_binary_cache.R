@@ -7,10 +7,12 @@ library(jsonlite)
 args <- commandArgs(trailingOnly = TRUE)
 output_dir <- if (length(args) >= 1) args[1] else "/output"
 max_layer_gb <- if (length(args) >= 2) as.numeric(args[2]) else 6
+ncpus <- if (length(args) >= 3) as.integer(args[3]) else 2
 
 cat("=== GDAL Revdep Binary Cache Builder ===\n")
 cat(sprintf("Output: %s\n", output_dir))
 cat(sprintf("Max layer size: %d GB\n", max_layer_gb))
+cat(sprintf("Ncpus: %d\n", ncpus))
 
 # Load config
 seed_pkgs <- readLines("/config/seed_packages.txt")
@@ -46,50 +48,36 @@ cache_pkgs <- unique(c(seed_pkgs, unlist(install_deps)))
 cache_pkgs <- intersect(cache_pkgs, rownames(ap))
 cat(sprintf("Packages to cache: %d\n", length(cache_pkgs)))
 
-# 3. Install all packages
+# 3. Install all packages in one batch
 cat("\n--- Installing packages ---\n")
 lib_dir <- file.path(output_dir, "lib_all")
 dir.create(lib_dir, recursive = TRUE, showWarnings = FALSE)
 
-# Track failures
-failed <- character()
-succeeded <- character()
+cat(sprintf("Installing %d packages with Ncpus=%d (this may take a while)...\n",
+            length(cache_pkgs), ncpus))
 
-for (i in seq_along(cache_pkgs)) {
-  pkg <- cache_pkgs[i]
-  cat(sprintf("[%d/%d] %s... ", i, length(cache_pkgs), pkg))
+# Batch install - R handles dependency ordering internally
+install.packages(
+  cache_pkgs,
+  lib = lib_dir,
+  repos = "https://cloud.r-project.org",
+  dependencies = TRUE,
+  INSTALL_opts = "--no-multiarch",
+  Ncpus = ncpus
+)
 
-  tryCatch({
-    # Skip if already installed
-    if (pkg %in% rownames(installed.packages(lib.loc = lib_dir))) {
-      cat("already installed\n")
-      succeeded <- c(succeeded, pkg)
-    } else {
-      install.packages(
-        pkg,
-        lib = lib_dir,
-        repos = "https://cloud.r-project.org",
-        dependencies = TRUE,
-        INSTALL_opts = "--no-multiarch",
-        quiet = FALSE
-      )
-      # Verify it actually installed
-      if (dir.exists(file.path(lib_dir, pkg))) {
-        cat("OK\n")
-        succeeded <- c(succeeded, pkg)
-      } else {
-        cat("FAILED (no directory created)\n")
-        failed <- c(failed, pkg)
-      }
-    }
-  }, error = function(e) {
-    cat(sprintf("FAILED: %s\n", conditionMessage(e)))
-    failed <<- c(failed, pkg)
-  })
-}
+# Check what actually installed
+installed_pkgs <- rownames(installed.packages(lib.loc = lib_dir))
+succeeded <- intersect(cache_pkgs, installed_pkgs)
+# Also count bonus packages installed as deps
+bonus <- setdiff(installed_pkgs, cache_pkgs)
+failed <- setdiff(cache_pkgs, installed_pkgs)
 
-cat(sprintf("\n--- Install complete: %d succeeded, %d failed ---\n",
-            length(succeeded), length(failed)))
+cat(sprintf("\n--- Install complete ---\n"))
+cat(sprintf("Requested: %d\n", length(cache_pkgs)))
+cat(sprintf("Succeeded: %d\n", length(succeeded)))
+cat(sprintf("Bonus deps: %d\n", length(bonus)))
+cat(sprintf("Failed: %d\n", length(failed)))
 
 if (length(failed) > 0) {
   cat("Failed packages:\n")
@@ -166,7 +154,7 @@ for (i in seq_along(layers)) {
     dst <- file.path(layer_dir, pkg)
 
     if (dir.exists(src)) {
-      # Use system cp for reliability
+      # Use system cp for reliability across filesystems
       ret <- system2("cp", args = c("-r", src, layer_dir), stdout = FALSE, stderr = FALSE)
       if (ret == 0 && dir.exists(dst)) {
         unlink(src, recursive = TRUE)
@@ -203,7 +191,7 @@ if (length(remaining) > 0) {
   cat(paste(head(remaining, 20), collapse = ", "), "\n")
 }
 
-# Remove empty lib_all
+# Remove lib_all
 unlink(lib_dir, recursive = TRUE)
 
 # 6. Write manifests
@@ -247,7 +235,9 @@ summary_data <- list(
   seed_packages = seed_pkgs,
   test_packages = length(test_pkgs),
   cached_packages = length(succeeded),
+  bonus_packages = length(bonus),
   failed_packages = length(failed),
+  total_installed = length(installed),
   num_layers = length(layers),
   total_size_gb = round(sum(pkg_sizes) / 1024^3, 2),
   copy_succeeded = copy_succeeded,
@@ -258,6 +248,6 @@ write_json(summary_data, file.path(output_dir, "build_summary.json"), pretty = T
 
 cat("\n=== Done ===\n")
 cat(sprintf("Layers: %d\n", length(layers)))
-cat(sprintf("Total cached: %d packages\n", length(succeeded)))
+cat(sprintf("Total installed: %d packages\n", length(installed)))
 cat(sprintf("Test manifest: %d packages\n", length(test_pkgs)))
 cat(sprintf("Verified in layers: %d packages\n", total_verified))
