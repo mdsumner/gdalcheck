@@ -71,7 +71,7 @@ for (i in seq_along(cache_pkgs)) {
         repos = "https://cloud.r-project.org",
         dependencies = FALSE,
         INSTALL_opts = "--no-multiarch",
-        quiet = TRUE
+        quiet = FALSE
       )
       # Verify it actually installed
       if (dir.exists(file.path(lib_dir, pkg))) {
