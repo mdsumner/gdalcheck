@@ -26,3 +26,8 @@ RUN Rscript -e "\
 # Copy test manifest
 COPY cache-out/test_manifest.csv /opt/test_manifest.csv
 COPY cache-out/build_summary.json /opt/build_summary.json
+
+
+COPY scripts/R/summary_cache_build.R /usr/local/bin/
+COPY scripts/gdalcheck-status /usr/local/bin/
+RUN chmod +x /usr/local/bin/gdalcheck-status

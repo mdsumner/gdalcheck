@@ -1,0 +1,2 @@
+#!/bin/bash
+exec Rscript /usr/local/bin/summary_cache_build.R

@@ -27,6 +27,17 @@ ENV DEBIAN_FRONTEND=noninteractive
 COPY config/sysreqs.txt /tmp/sysreqs.txt
 RUN bash /tmp/sysreqs.txt && rm -rf /var/lib/apt/lists/*
 
+# Known extras not caught by pkgdepends sysreqs database
+# (either missing from DB or platform mismatch with GHA runner)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gfortran \
+    liblapack-dev \
+    libblas-dev \
+    libsqlite3-dev \
+    tcl-dev \
+    tk-dev \
+    && rm -rf /var/lib/apt/lists/*
+
 # Record versions for provenance
 RUN echo "=== gdalcheck base ===" > /opt/gdalcheck_versions.txt \
     && gdal-config --version >> /opt/gdalcheck_versions.txt \
