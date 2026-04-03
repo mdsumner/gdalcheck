@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-04-03 06:17:04.24768",
+  "built_at": "2026-04-03 07:28:08.972859",
   "seed_packages": ["gdalraster", "vapour"],
   "test_packages": 5,
   "cached_packages": 86,
