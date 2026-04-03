@@ -6,7 +6,7 @@ FROM ${BASE_IMAGE}
 
 ENV R_LIBS_SITE=/usr/local/lib/R/site-library
 
-# Layer 1: 341 packages
+# Layer 1: 344 packages
 COPY cache-out/layer01/ ${R_LIBS_SITE}/
 
 # Copy check script
