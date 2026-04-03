@@ -69,7 +69,7 @@ for (i in seq_along(cache_pkgs)) {
         pkg,
         lib = lib_dir,
         repos = "https://cloud.r-project.org",
-        dependencies = FALSE,
+        dependencies = TRUE,
         INSTALL_opts = "--no-multiarch",
         quiet = TRUE
       )
