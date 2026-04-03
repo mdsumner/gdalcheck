@@ -1,12 +1,12 @@
 {
-  "built_at": "2026-04-03 06:17:04.24768",
+  "built_at": "2026-04-03 08:54:02.396404",
   "seed_packages": ["gdalraster", "vapour"],
   "test_packages": 5,
-  "cached_packages": 86,
-  "failed_packages": 22,
+  "cached_packages": 108,
+  "failed_packages": 0,
   "num_layers": 1,
-  "total_size_gb": 0.43,
-  "copy_succeeded": 86,
+  "total_size_gb": 1.43,
+  "copy_succeeded": 336,
   "copy_failed": 0,
-  "verified_total": 86
+  "verified_total": 336
 }
