@@ -1,47 +1,5 @@
 apt-get update -qq && apt-get install -y --no-install-recommends \
-    automake \
-    chromium \
-    coinor-libsymphony-dev \
-    coinor-symphony \
-    default-jdk \
-    gsfonts \
-    jags \
-    libarchive-dev \
-    libbz2-dev \
-    libcairo2-dev \
-    libfftw3-dev \
-    libgit2-dev \
-    libgl1-mesa-dev \
     libglpk-dev \
-    libglu1-mesa-dev \
-    libgmp3-dev \
-    libgsl0-dev \
     libicu-dev \
-    libimage-exiftool-perl \
-    libjq-dev \
-    libmagic-dev \
-    libmagick++-dev \
-    libmpfr-dev \
-    libnode-dev \
-    libpoppler-cpp-dev \
-    libprotobuf-dev \
-    libprotoc-dev \
-    librdf0-dev \
-    libsecret-1-dev \
-    libsndfile1-dev \
-    libsodium-dev \
     libuv1-dev \
-    libx11-dev \
-    make \
-    perl \
-    poppler-data \
-    protobuf-compiler \
-    python3 \
-    saga \
-    tcl \
-    texlive \
-    tk \
-    tk-dev \
-    tk-table \
-    xz-utils \
-    zlib1g-dev
+    make
