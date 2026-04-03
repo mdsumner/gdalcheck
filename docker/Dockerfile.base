@@ -30,10 +30,14 @@ RUN bash /tmp/sysreqs.txt && rm -rf /var/lib/apt/lists/*
 # Known extras not caught by pkgdepends sysreqs database
 # (either missing from DB or platform mismatch with GHA runner)
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    cargo \
     gfortran \
     liblapack-dev \
     libblas-dev \
     libsqlite3-dev \
+    libxslt1-dev \
+    libmagick++-dev \
+    unixodbc-dev \
     tcl-dev \
     tk-dev \
     && rm -rf /var/lib/apt/lists/*
