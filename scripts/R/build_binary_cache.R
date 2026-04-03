@@ -18,12 +18,13 @@ seed_pkgs <- seed_pkgs[nzchar(trimws(seed_pkgs))]
 
 cat(sprintf("Seed packages: %s\n", paste(seed_pkgs, collapse = ", ")))
 
-db <- tools::CRAN_package_db()
+# Use available.packages() for dependency resolution
+ap <- available.packages(repos = "https://cloud.r-project.org")
 
 # 1. Get reverse deps (what we'll TEST)
 cat("\n--- Finding reverse dependencies ---\n")
 revdeps <- tools::package_dependencies(
-  seed_pkgs, db = db,
+  seed_pkgs, db = ap,
   reverse = TRUE,
   which = c("Depends", "Imports", "LinkingTo"),
   recursive = FALSE
@@ -34,7 +35,7 @@ cat(sprintf("Packages to test: %d\n", length(test_pkgs)))
 # 2. Get forward deps of test packages (what we need to CACHE)
 cat("\n--- Finding install dependencies ---\n")
 install_deps <- tools::package_dependencies(
-  c(seed_pkgs, test_pkgs), db = db,
+  c(seed_pkgs, test_pkgs), db = ap,
   reverse = FALSE,
   which = c("Depends", "Imports", "LinkingTo"),
   recursive = TRUE
@@ -42,7 +43,7 @@ install_deps <- tools::package_dependencies(
 cache_pkgs <- unique(c(seed_pkgs, unlist(install_deps)))
 
 # Filter to packages actually on CRAN
-cache_pkgs <- intersect(cache_pkgs, db$Package)
+cache_pkgs <- intersect(cache_pkgs, rownames(ap))
 cat(sprintf("Packages to cache: %d\n", length(cache_pkgs)))
 
 # 3. Install all packages
@@ -72,8 +73,14 @@ for (i in seq_along(cache_pkgs)) {
         INSTALL_opts = "--no-multiarch",
         quiet = TRUE
       )
-      cat("OK\n")
-      succeeded <- c(succeeded, pkg)
+      # Verify it actually installed
+      if (dir.exists(file.path(lib_dir, pkg))) {
+        cat("OK\n")
+        succeeded <- c(succeeded, pkg)
+      } else {
+        cat("FAILED (no directory created)\n")
+        failed <- c(failed, pkg)
+      }
     }
   }, error = function(e) {
     cat(sprintf("FAILED: %s\n", conditionMessage(e)))
@@ -94,12 +101,15 @@ if (length(failed) > 0) {
 cat("\n--- Partitioning into layers ---\n")
 
 installed <- list.dirs(lib_dir, recursive = FALSE, full.names = FALSE)
+cat(sprintf("Directories in lib_all: %d\n", length(installed)))
 
 pkg_sizes <- sapply(installed, function(p) {
   files <- list.files(file.path(lib_dir, p), recursive = TRUE, full.names = TRUE)
-  if (length(files) == 0) return(0)
+  if (length(files) == 0) return(1)  # Minimum size to ensure inclusion
   sum(file.info(files)$size, na.rm = TRUE)
 })
+
+cat(sprintf("Packages with sizes calculated: %d\n", length(pkg_sizes)))
 
 # Sort by size descending (helps pack layers more evenly)
 pkg_sizes <- sort(pkg_sizes, decreasing = TRUE)
@@ -133,13 +143,19 @@ for (pkg in names(pkg_sizes)) {
 }
 
 cat(sprintf("Created %d layers:\n", length(layers)))
+total_in_layers <- 0
 for (i in seq_along(layers)) {
   cat(sprintf("  Layer %d: %d packages, %.2f GB\n",
               i, length(layers[[i]]), layer_sizes[i] / 1024^3))
+  total_in_layers <- total_in_layers + length(layers[[i]])
 }
+cat(sprintf("Total packages in layers: %d\n", total_in_layers))
 
 # 5. Move packages into layer directories
 cat("\n--- Organizing layer directories ---\n")
+
+copy_failed <- character()
+copy_succeeded <- 0
 
 for (i in seq_along(layers)) {
   layer_dir <- file.path(output_dir, sprintf("layer%02d", i))
@@ -147,16 +163,46 @@ for (i in seq_along(layers)) {
 
   for (pkg in layers[[i]]) {
     src <- file.path(lib_dir, pkg)
+    dst <- file.path(layer_dir, pkg)
+
     if (dir.exists(src)) {
-      success <- file.copy(src, layer_dir, recursive = TRUE)
-      if (success) {
+      # Use system cp for reliability
+      ret <- system2("cp", args = c("-r", src, layer_dir), stdout = FALSE, stderr = FALSE)
+      if (ret == 0 && dir.exists(dst)) {
         unlink(src, recursive = TRUE)
+        copy_succeeded <- copy_succeeded + 1
       } else {
-        cat(sprintf("WARNING: Failed to copy %s\n", pkg))
+        cat(sprintf("WARNING: Failed to copy %s (ret=%d, exists=%s)\n", pkg, ret, dir.exists(dst)))
+        copy_failed <- c(copy_failed, pkg)
       }
+    } else {
+      cat(sprintf("WARNING: Source missing for %s\n", pkg))
+      copy_failed <- c(copy_failed, pkg)
     }
   }
 }
+
+cat(sprintf("Copy results: %d succeeded, %d failed\n", copy_succeeded, length(copy_failed)))
+
+# Verify layer contents
+cat("\n--- Verifying layer contents ---\n")
+total_verified <- 0
+for (i in seq_along(layers)) {
+  layer_dir <- file.path(output_dir, sprintf("layer%02d", i))
+  actual <- length(list.dirs(layer_dir, recursive = FALSE))
+  expected <- length(layers[[i]])
+  cat(sprintf("  Layer %d: expected %d, actual %d\n", i, expected, actual))
+  total_verified <- total_verified + actual
+}
+cat(sprintf("Total verified in layers: %d\n", total_verified))
+
+# Check what's left in lib_all
+remaining <- list.dirs(lib_dir, recursive = FALSE, full.names = FALSE)
+if (length(remaining) > 0) {
+  cat(sprintf("\nWARNING: %d packages still in lib_all:\n", length(remaining)))
+  cat(paste(head(remaining, 20), collapse = ", "), "\n")
+}
+
 # Remove empty lib_all
 unlink(lib_dir, recursive = TRUE)
 
@@ -203,7 +249,10 @@ summary_data <- list(
   cached_packages = length(succeeded),
   failed_packages = length(failed),
   num_layers = length(layers),
-  total_size_gb = round(sum(pkg_sizes) / 1024^3, 2)
+  total_size_gb = round(sum(pkg_sizes) / 1024^3, 2),
+  copy_succeeded = copy_succeeded,
+  copy_failed = length(copy_failed),
+  verified_total = total_verified
 )
 write_json(summary_data, file.path(output_dir, "build_summary.json"), pretty = TRUE, auto_unbox = TRUE)
 
@@ -211,3 +260,4 @@ cat("\n=== Done ===\n")
 cat(sprintf("Layers: %d\n", length(layers)))
 cat(sprintf("Total cached: %d packages\n", length(succeeded)))
 cat(sprintf("Test manifest: %d packages\n", length(test_pkgs)))
+cat(sprintf("Verified in layers: %d packages\n", total_verified))
