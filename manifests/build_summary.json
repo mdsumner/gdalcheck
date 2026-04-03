@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-04-02 16:32:22.893866",
+  "built_at": "2026-04-03 01:26:15.903606",
   "seed_packages": ["gdalcubes", "gdalraster", "raster", "sf", "stars", "terra", "vapour"],
   "test_packages": 1071,
   "cached_packages": 1558,
