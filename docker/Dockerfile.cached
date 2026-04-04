@@ -6,11 +6,14 @@ FROM ${BASE_IMAGE}
 
 ENV R_LIBS_SITE=/usr/local/lib/R/site-library
 
-# Layer 01: 461 packages
+# Layer 01: 49 packages
 COPY cache-out/layer01/ ${R_LIBS_SITE}/
 
-# Layer 02: 2209 packages
+# Layer 02: 1510 packages
 COPY cache-out/layer02/ ${R_LIBS_SITE}/
+
+# Layer 03: 824 packages
+COPY cache-out/layer03/ ${R_LIBS_SITE}/
 
 # Install CLI tools
 COPY scripts/check_one.sh /usr/local/bin/

@@ -1,12 +1,14 @@
 {
-  "built_at": "2026-04-03 11:56:20.155977",
-  "seed_packages": ["gdalraster", "vapour", "gdalcubes"],
-  "test_packages": 5,
-  "cached_packages": 111,
-  "failed_packages": 0,
-  "num_layers": 1,
-  "total_size_gb": 1.65,
-  "copy_succeeded": 344,
+  "built_at": "2026-04-04 11:32:32.962573",
+  "seed_packages": ["gdalcubes", "gdalraster", "sf", "terra", "vapour", "mapview", "raster", "stars", "tmap", "wk"],
+  "test_packages": 1086,
+  "cached_packages": 1558,
+  "bonus_packages": 825,
+  "failed_packages": 3,
+  "total_installed": 2383,
+  "num_layers": 3,
+  "total_size_gb": 12.15,
+  "copy_succeeded": 2383,
   "copy_failed": 0,
-  "verified_total": 344
+  "verified_total": 2383
 }
