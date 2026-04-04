@@ -1,5 +1,11 @@
 gdalcubes
 gdalraster
+sf
 terra
 vapour
+mapview
 raster
+stars
+tmap
+wk
+
