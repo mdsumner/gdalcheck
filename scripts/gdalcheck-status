@@ -1,2 +1,3 @@
 #!/bin/bash
+# gdalcheck-status - Show image build info and status
 exec Rscript /usr/local/bin/summary_cache_build.R

@@ -1,74 +1,92 @@
 #!/bin/bash
-# Check a single R package against bleeding-edge GDAL
-# Usage: check_one.sh <package_name> <results_dir>
+# check_one.sh - Run R CMD check on a single CRAN package
+# Usage: check_one.sh <package> <results_dir>
 
 set -euo pipefail
 
-PKG="${1:?Package name required}"
+PKG="$1"
 RESULTS_DIR="${2:-/results}"
 
 mkdir -p "$RESULTS_DIR"
 
-echo "=== Checking $PKG ==="
+# Get GDAL version for metadata
+GDAL_VERSION=$(gdal-config --version 2>/dev/null || echo "unknown")
 
-# Run the check
-Rscript --vanilla << EOF
-pkg <- "$PKG"
-results_dir <- "$RESULTS_DIR"
-
+# Run check via rcmdcheck and output JSON
+Rscript --vanilla -e "
+library(rcmdcheck)
 library(jsonlite)
 
-# Get GDAL version — gdalraster is always present in gdal-r-full
-gdal_version <- gdalraster::gdal_version()[4]
+pkg <- '${PKG}'
+results_dir <- '${RESULTS_DIR}'
+gdal_version <- '${GDAL_VERSION}'
 
-result <- list(
-  package = pkg,
-  status = "OK",
-  gdal_version = as.character(gdal_version),
-  timestamp = as.character(Sys.time()),
-  error = NULL
-)
-
+# Download and check
 tryCatch({
+  # Create temp dir for check
+  check_dir <- tempdir()
+  
   # Download package
-  url <- available.packages(repos = "https://cloud.r-project.org")[pkg, "Repository"]
-  tarball <- download.packages(pkg, destdir = tempdir(), repos = "https://cloud.r-project.org")[1, 2]
+  url <- paste0('https://cran.r-project.org/src/contrib/', pkg, '_', 
+                available.packages()[pkg, 'Version'], '.tar.gz')
+  destfile <- file.path(check_dir, basename(url))
   
-  # Check it
-  check_dir <- file.path(tempdir(), paste0(pkg, ".Rcheck"))
+  download.file(url, destfile, quiet = TRUE)
   
-  check_result <- tools::R_CMD_check(
-    tarball,
-    check_dir = tempdir(),
-    args = c("--no-manual", "--no-vignettes", "--no-build-vignettes")
-  )
+  # Run check
+  start_time <- Sys.time()
+  res <- rcmdcheck(destfile, quiet = TRUE, args = '--no-manual')
+  end_time <- Sys.time()
   
-  # Look for failures
-  log_file <- file.path(check_dir, "00check.log")
-  if (file.exists(log_file)) {
-    log_content <- readLines(log_file, warn = FALSE)
-    
-    # Check for ERROR or FAIL
-    if (any(grepl("^Status:.*ERROR", log_content)) || 
-        any(grepl("^Status:.*FAIL", log_content))) {
-      result\$status <- "FAIL"
-      # Capture last 50 lines as context
-      result\$error <- paste(tail(log_content, 50), collapse = "\n")
-    } else if (any(grepl("^Status:.*WARNING", log_content))) {
-      result\$status <- "WARN"
-    }
+  # Determine status
+  status <- if (length(res\$errors) > 0) {
+    'ERROR'
+  } else if (length(res\$warnings) > 0) {
+    'WARNING'
+  } else {
+    'OK'
   }
   
+  # Build result
+  result <- list(
+    package = pkg,
+    version = res\$version,
+    status = status,
+    errors = length(res\$errors),
+    warnings = length(res\$warnings),
+    notes = length(res\$notes),
+    error_messages = if (length(res\$errors) > 0) res\$errors else NULL,
+    warning_messages = if (length(res\$warnings) > 0) res\$warnings else NULL,
+    check_time_secs = as.numeric(difftime(end_time, start_time, units = 'secs')),
+    gdal_version = gdal_version,
+    r_version = paste(R.version\$major, R.version\$minor, sep = '.'),
+    timestamp = format(Sys.time(), '%Y-%m-%dT%H:%M:%SZ', tz = 'UTC')
+  )
+  
+  # Write JSON
+  outfile <- file.path(results_dir, paste0(pkg, '.json'))
+  write_json(result, outfile, pretty = TRUE, auto_unbox = TRUE)
+  
+  cat(sprintf('%s: %s (%d errors, %d warnings, %d notes)\n', 
+              pkg, status, length(res\$errors), length(res\$warnings), length(res\$notes)))
+  
 }, error = function(e) {
-  result\$status <<- "ERROR"
-  result\$error <<- conditionMessage(e)
+  result <- list(
+    package = pkg,
+    version = NA,
+    status = 'FAIL',
+    errors = 1,
+    warnings = 0,
+    notes = 0,
+    error_messages = list(conditionMessage(e)),
+    gdal_version = gdal_version,
+    r_version = paste(R.version\$major, R.version\$minor, sep = '.'),
+    timestamp = format(Sys.time(), '%Y-%m-%dT%H:%M:%SZ', tz = 'UTC')
+  )
+  
+  outfile <- file.path(results_dir, paste0(pkg, '.json'))
+  write_json(result, outfile, pretty = TRUE, auto_unbox = TRUE)
+  
+  cat(sprintf('%s: FAIL (%s)\n', pkg, conditionMessage(e)))
 })
-
-# Write result
-outfile <- file.path(results_dir, paste0(pkg, ".json"))
-write_json(result, outfile, pretty = TRUE, auto_unbox = TRUE)
-
-cat(sprintf("Result: %s\n", result\$status))
-EOF
-
-echo "=== Done $PKG ==="
+"

@@ -1,0 +1,30 @@
+#!/bin/bash
+# gdalcheck-pkg - Check one or more R packages
+# Usage: gdalcheck-pkg sf
+#        gdalcheck-pkg sf,terra,stars
+#        MAKEFLAGS=-j4 gdalcheck-pkg sf
+
+set -euo pipefail
+
+if [ $# -lt 1 ]; then
+  echo "Usage: gdalcheck-pkg <package>[,package,...]"
+  echo "       gdalcheck-pkg sf"
+  echo "       gdalcheck-pkg sf,terra,stars"
+  echo ""
+  echo "Environment:"
+  echo "  MAKEFLAGS      - make flags (default: -j2)"
+  echo "  RESULTS_DIR    - output directory (default: /results)"
+  exit 1
+fi
+
+MAKEFLAGS="${MAKEFLAGS:--j2}"
+export MAKEFLAGS
+
+RESULTS_DIR="${RESULTS_DIR:-/results}"
+mkdir -p "$RESULTS_DIR"
+
+# Split comma-separated packages
+for pkg in $(echo "$1" | tr ',' ' '); do
+  echo "=== Checking $pkg ==="
+  /usr/local/bin/check_one.sh "$pkg" "$RESULTS_DIR"
+done

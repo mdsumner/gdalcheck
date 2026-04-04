@@ -1,18 +1,20 @@
 #!/bin/bash
-# Generate Dockerfile with layered binary cache
+# generate_dockerfile.sh - Generate Dockerfile.cached from built layers
+# Usage: ./generate_dockerfile.sh <cache_dir> <output_dockerfile>
 
 set -euo pipefail
 
 CACHE_DIR="${1:-cache-out}"
 OUTPUT="${2:-docker/Dockerfile.cached}"
 
-if [[ ! -f "$CACHE_DIR/layers.txt" ]]; then
-  echo "Error: $CACHE_DIR/layers.txt not found"
+# Check required files exist
+if [ ! -f "$CACHE_DIR/layer_manifest.csv" ]; then
+  echo "ERROR: $CACHE_DIR/layer_manifest.csv not found"
   exit 1
 fi
 
-LAYERS=$(cat "$CACHE_DIR/layers.txt")
-NUM_LAYERS=$(echo "$LAYERS" | wc -l)
+# Count layers
+NUM_LAYERS=$(tail -n +2 "$CACHE_DIR/layer_manifest.csv" | wc -l)
 
 echo "Generating $OUTPUT with $NUM_LAYERS cache layers"
 
@@ -26,25 +28,31 @@ FROM ${BASE_IMAGE}
 ENV R_LIBS_SITE=/usr/local/lib/R/site-library
 HEADER
 
-# Add each layer as a separate COPY (creates separate Docker layers)
-i=1
-for layer in $LAYERS; do
-  pkg_count=$(ls -1 "$CACHE_DIR/$layer" 2>/dev/null | wc -l || echo 0)
-  echo "" >> "$OUTPUT"
-  echo "# Layer $i: $pkg_count packages" >> "$OUTPUT"
-  echo "COPY cache-out/$layer/ \${R_LIBS_SITE}/" >> "$OUTPUT"
-  ((i++))
+# Add layer COPY commands
+for i in $(seq -f "%02g" 1 $NUM_LAYERS); do
+  LAYER_DIR="$CACHE_DIR/layer$i"
+  if [ -d "$LAYER_DIR" ]; then
+    PKG_COUNT=$(ls -1 "$LAYER_DIR" | wc -l)
+    echo "" >> "$OUTPUT"
+    echo "# Layer $i: $PKG_COUNT packages" >> "$OUTPUT"
+    echo "COPY $CACHE_DIR/layer$i/ \${R_LIBS_SITE}/" >> "$OUTPUT"
+  fi
 done
 
 cat >> "$OUTPUT" << 'FOOTER'
 
-# Copy check script
+# Install CLI tools
 COPY scripts/check_one.sh /usr/local/bin/
-RUN chmod +x /usr/local/bin/check_one.sh
+COPY scripts/gdalcheck-status /usr/local/bin/
+COPY scripts/gdalcheck-pkg /usr/local/bin/
+COPY scripts/R/summary_cache_build.R /usr/local/bin/
+RUN chmod +x /usr/local/bin/check_one.sh \
+             /usr/local/bin/gdalcheck-status \
+             /usr/local/bin/gdalcheck-pkg
 
 # Verify key packages load
 RUN Rscript -e "\
-  for (pkg in c('sf', 'terra')) { \
+  for (pkg in c('sf', 'terra', 'gdalraster', 'vapour')) { \
     if (requireNamespace(pkg, quietly = TRUE)) { \
       cat(sprintf('%s: OK\n', pkg)) \
     } else { \
@@ -52,9 +60,12 @@ RUN Rscript -e "\
     } \
   }"
 
-# Copy test manifest
+# Copy manifests
 COPY cache-out/test_manifest.csv /opt/test_manifest.csv
 COPY cache-out/build_summary.json /opt/build_summary.json
+
+# Default entrypoint
+CMD ["R"]
 FOOTER
 
 echo "Generated $OUTPUT"

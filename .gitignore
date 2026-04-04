@@ -1,24 +1,20 @@
 # Build artifacts
 cache-out/
-*.tar.gz
+build_*.log
 
-# R
-.Rhistory
-.Rdata
-.RData
+# R artifacts
 *.Rproj.user
-*.Rproj
-# OS
+.Rhistory
+.RData
+.Ruserdata
+
+# OS files
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
-logs/
-
-# Local config
-.env
-.last_sha
-.Rproj.user
-.httr-oauth
-.quarto
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
