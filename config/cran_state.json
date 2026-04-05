@@ -1501,8 +1501,8 @@
   },
   {
     "Package": "fude",
-    "Version": "0.4.0",
-    "MD5sum": "e677b764b00d5d46acd316049e7abcee"
+    "Version": "0.4.1",
+    "MD5sum": "57c03a17b751e56bda1c647a1a45e0b0"
   },
   {
     "Package": "galah",
@@ -2805,6 +2805,11 @@
     "MD5sum": "c63135056f153db3e07c9af1944aa0a0"
   },
   {
+    "Package": "misc",
+    "Version": "0.0.5",
+    "MD5sum": "8c0570ae7f530d9d4a52b086e868b01b"
+  },
+  {
     "Package": "misuvi",
     "Version": "0.1.1",
     "MD5sum": "b020f29b00f8be15a96f7ac516876ff6"
@@ -3096,8 +3101,8 @@
   },
   {
     "Package": "openairmaps",
-    "Version": "0.9.1",
-    "MD5sum": "7d8c1ef3adf37fe6c86ef1ea52969515"
+    "Version": "0.10.0",
+    "MD5sum": "539541a23904fdbd2bc96084c06fe087"
   },
   {
     "Package": "opendatatoronto",
@@ -4551,8 +4556,8 @@
   },
   {
     "Package": "spatialEco",
-    "Version": "2.0-3",
-    "MD5sum": "3e1d5a81b22653207b414d9ded56cefc"
+    "Version": "2.0-4",
+    "MD5sum": "b8e7f25d17b3a96b4d94b1396c2ecbf3"
   },
   {
     "Package": "spatialGE",
