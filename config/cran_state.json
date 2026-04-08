@@ -706,8 +706,8 @@
   },
   {
     "Package": "CompositionalSR",
-    "Version": "1.2",
-    "MD5sum": "0bee51566b049b2f62d5e9bbf135fa6b"
+    "Version": "1.3",
+    "MD5sum": "3fdb57df5fbee6ab24adcb18c5332827"
   },
   {
     "Package": "concaveman",
@@ -741,8 +741,8 @@
   },
   {
     "Package": "CopernicusMarine",
-    "Version": "0.4.5",
-    "MD5sum": "c63902d5de569a20708bea87b1cac50a"
+    "Version": "0.4.6",
+    "MD5sum": "c108413c15424ddeda4f2ddb1e41f0f1"
   },
   {
     "Package": "coreCT",
@@ -2633,6 +2633,11 @@
     "Package": "mapscanner",
     "Version": "0.1.1",
     "MD5sum": "f9860770eca1ec4d39ccaed2e6e31dc2"
+  },
+  {
+    "Package": "mapSenegal",
+    "Version": "0.1.1",
+    "MD5sum": "07f8ec3112fa425fc06bc31811c37fcd"
   },
   {
     "Package": "mapsf",
@@ -5371,8 +5376,8 @@
   },
   {
     "Package": "weatherOz",
-    "Version": "2.0.2",
-    "MD5sum": "71dd0aa786c1c86add738c4bddedf28b"
+    "Version": "3.0.0",
+    "MD5sum": "bc692044c07be828edf13c55288fa58c"
   },
   {
     "Package": "weathR",
