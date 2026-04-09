@@ -626,8 +626,8 @@
   },
   {
     "Package": "climatehealth",
-    "Version": "1.0.0",
-    "MD5sum": "16e1d50bd4ac0b6389b1118aa6c4bebe"
+    "Version": "1.0.1",
+    "MD5sum": "2749608c478d7be18029a3887b798bdd"
   },
   {
     "Package": "climateStability",
@@ -1236,8 +1236,8 @@
   },
   {
     "Package": "epiR",
-    "Version": "2.0.91",
-    "MD5sum": "d27973fe7beaa3a64c93fa1dd2bed192"
+    "Version": "2.0.92",
+    "MD5sum": "14b2e1a57a23399a070fcc9e2bbfcda2"
   },
   {
     "Package": "episomer",
@@ -5398,6 +5398,11 @@
     "Package": "WeightedTreemaps",
     "Version": "0.1.4",
     "MD5sum": "470acc377e0417f2cd4f1af9ca98cf20"
+  },
+  {
+    "Package": "weightedVoronoi",
+    "Version": "1.1.1",
+    "MD5sum": "a26fcda5d996d8ccca30651d2be5fa02"
   },
   {
     "Package": "wflo",
