@@ -600,6 +600,11 @@
     "MD5sum": "d553ea03fe8eca051f1cf6ba4e48128f"
   },
   {
+    "Package": "circuitscaper",
+    "Version": "0.1.0",
+    "MD5sum": "7f491d4ef1d9751f03bbf0596dc3e952"
+  },
+  {
     "Package": "cisp",
     "Version": "0.2.0",
     "MD5sum": "e8bbbd35edc0fb1bc331d0278baecc0d"
@@ -1508,6 +1513,11 @@
     "Package": "galah",
     "Version": "2.2.0",
     "MD5sum": "57ce4bf4eb704eb9db86c0d6140059b9"
+  },
+  {
+    "Package": "GapAnalysis",
+    "Version": "2.0.0",
+    "MD5sum": "756d095f576a3570d6b4126316ff9108"
   },
   {
     "Package": "gateR",
@@ -2688,6 +2698,11 @@
     "Package": "MassWateR",
     "Version": "2.2.1",
     "MD5sum": "2ff1d956ec0ccfaf4cc8cddea521f0e0"
+  },
+  {
+    "Package": "MatchingPursuit",
+    "Version": "1.0.0",
+    "MD5sum": "fa33a610e7430178a0cc6835befb69f8"
   },
   {
     "Package": "MaxentVariableSelection",
@@ -4046,8 +4061,8 @@
   },
   {
     "Package": "rsi",
-    "Version": "0.3.2",
-    "MD5sum": "211024a8aa1163e7cac53752f19ad3fd"
+    "Version": "0.3.3",
+    "MD5sum": "5563742eab2df99c2cddfbab6e9cbd73"
   },
   {
     "Package": "rsocialwatcher",
@@ -4516,8 +4531,8 @@
   },
   {
     "Package": "spanishoddata",
-    "Version": "0.2.3",
-    "MD5sum": "76737f97a9f8eb60b9f8f3d9a3ba087d"
+    "Version": "0.2.4",
+    "MD5sum": "5890c613c46790a2df5e146ce0e81fc5"
   },
   {
     "Package": "spanner",
