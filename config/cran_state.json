@@ -1480,6 +1480,11 @@
     "MD5sum": "a12f868fa6d5186f859d481781c5b009"
   },
   {
+    "Package": "FORTLS",
+    "Version": "2.0.0",
+    "MD5sum": "7a682208298ae15a10a56f161fe425f8"
+  },
+  {
     "Package": "foto",
     "Version": "1.1",
     "MD5sum": "0f1b8554c2c13d62830239c06bb64ba9"
@@ -1571,8 +1576,8 @@
   },
   {
     "Package": "gecko",
-    "Version": "1.0.2",
-    "MD5sum": "4d7fd9aeb66fda799c58ebf162a2d9ab"
+    "Version": "1.0.3",
+    "MD5sum": "d3347bd353238d50f528abad5b29b74c"
   },
   {
     "Package": "geeLite",
@@ -3281,8 +3286,8 @@
   },
   {
     "Package": "pc",
-    "Version": "0.1",
-    "MD5sum": "4b6df7efe00e90a54bd0e4870f7af693"
+    "Version": "0.2",
+    "MD5sum": "f95cfdc36b567723067a4639d36fdcc7"
   },
   {
     "Package": "pct",
@@ -3318,6 +3323,11 @@
     "Package": "PHENTHAUproc",
     "Version": "1.1.1",
     "MD5sum": "55e37647f6f3156343c2a5d3c19f3907"
+  },
+  {
+    "Package": "photon",
+    "Version": "1.0.0-1",
+    "MD5sum": "8db6ab8e224c4e555d8d5a3c6533a3fd"
   },
   {
     "Package": "phyloraster",
