@@ -1641,8 +1641,8 @@
   },
   {
     "Package": "geodata",
-    "Version": "0.6-6",
-    "MD5sum": "672f87b0892ab31e8acebcb6663a4f6a"
+    "Version": "0.6-9",
+    "MD5sum": "5ae770299bc3d4b83fdfc36e0a148056"
   },
   {
     "Package": "geodimension",
