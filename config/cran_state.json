@@ -426,8 +426,8 @@
   },
   {
     "Package": "cancensus",
-    "Version": "0.5.10",
-    "MD5sum": "12b7b2be0194ed436be7187d39a71c60"
+    "Version": "0.6.0",
+    "MD5sum": "410b4f148a58209017da4f1dee0dfe37"
   },
   {
     "Package": "CAOP.RAA.2024",
@@ -1631,8 +1631,8 @@
   },
   {
     "Package": "geocodebr",
-    "Version": "0.6.1",
-    "MD5sum": "851ccded616cc5b59640dc82c44a2a64"
+    "Version": "0.6.2",
+    "MD5sum": "177e8b503aa84666d075092a0dcaa610"
   },
   {
     "Package": "geocomplexity",
@@ -2168,6 +2168,11 @@
     "Package": "igr",
     "Version": "1.0.1",
     "MD5sum": "b41eb3ef4c4ef38644e49c7207c88305"
+  },
+  {
+    "Package": "ILORA",
+    "Version": "0.1.0",
+    "MD5sum": "b7b8535f4743b67627cbe1b519a868ac"
   },
   {
     "Package": "imageRy",
@@ -2961,8 +2966,8 @@
   },
   {
     "Package": "multiScaleR",
-    "Version": "0.5.0",
-    "MD5sum": "95fef50d235eff6329ae1b55a46d2e8b"
+    "Version": "0.6.6",
+    "MD5sum": "40456c307bcf81e56a264b7a4be28a07"
   },
   {
     "Package": "MultiscaleSCP",
@@ -4515,6 +4520,11 @@
     "MD5sum": "337803fa6ff6570f178d9eb321f30f68"
   },
   {
+    "Package": "soilassessment",
+    "Version": "0.3.2",
+    "MD5sum": "b158a02cbb0124bfc0a4f7f6adcdca2b"
+  },
+  {
     "Package": "SoilSaltIndex",
     "Version": "0.1.0",
     "MD5sum": "06e333ed82d46860b380ec43fae25769"
@@ -5138,6 +5148,11 @@
     "Package": "topoDistance",
     "Version": "1.0.2",
     "MD5sum": "d8a5334f36701efe51a559ab9cac8804"
+  },
+  {
+    "Package": "toponym",
+    "Version": "2.0.1",
+    "MD5sum": "3af423b57d48463b16573f206ecec203"
   },
   {
     "Package": "track2KBA",
