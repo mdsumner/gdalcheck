@@ -711,8 +711,8 @@
   },
   {
     "Package": "CompositionalSR",
-    "Version": "1.3",
-    "MD5sum": "3fdb57df5fbee6ab24adcb18c5332827"
+    "Version": "1.4",
+    "MD5sum": "c2e3b42e61c4a4850914003077c8f0af"
   },
   {
     "Package": "concaveman",
@@ -2591,8 +2591,8 @@
   },
   {
     "Package": "mapgl",
-    "Version": "0.4.5",
-    "MD5sum": "c886de3d2507a1bfe45a88bbfc44dcdc"
+    "Version": "0.4.6",
+    "MD5sum": "a6e0306cf10d2d43ca8fae5eea0d414f"
   },
   {
     "Package": "mapi",
@@ -2711,8 +2711,8 @@
   },
   {
     "Package": "MatchingPursuit",
-    "Version": "1.0.0",
-    "MD5sum": "fa33a610e7430178a0cc6835befb69f8"
+    "Version": "1.0.1",
+    "MD5sum": "865dac6f2a9f5c4e30dac5b294f58727"
   },
   {
     "Package": "MaxentVariableSelection",
@@ -3176,8 +3176,8 @@
   },
   {
     "Package": "osmextract",
-    "Version": "0.5.3",
-    "MD5sum": "a85d77a3c1784e457da3ce056884b7e0"
+    "Version": "0.6.0",
+    "MD5sum": "1e88d72c8fa6619a4665b2647851bf56"
   },
   {
     "Package": "OSMscale",
@@ -5091,8 +5091,8 @@
   },
   {
     "Package": "tinyVAST",
-    "Version": "1.5.0",
-    "MD5sum": "6794c562427d464cbacc5391c942aff0"
+    "Version": "1.5.1",
+    "MD5sum": "f556bde6d4953ef00e8adef1581d7285"
   },
   {
     "Package": "tissot",
