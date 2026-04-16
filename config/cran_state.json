@@ -2035,6 +2035,11 @@
     "MD5sum": "ea978ecab1ab2a63934f5461519eae86"
   },
   {
+    "Package": "h3sdm",
+    "Version": "0.1.0",
+    "MD5sum": "cc9aab3d4cec3b8b0b521e537ada4b6e"
+  },
+  {
     "Package": "habtools",
     "Version": "1.1.1",
     "MD5sum": "2fea0cee44c7ccc233f046cc25a30cbd"
@@ -2431,8 +2436,8 @@
   },
   {
     "Package": "leafgl",
-    "Version": "0.2.2",
-    "MD5sum": "be9344df8f0007c1b3bd65a107d68289"
+    "Version": "0.2.4",
+    "MD5sum": "8b172ffd4f00c38fd6c0dfa5200b6f66"
   },
   {
     "Package": "leaflet",
