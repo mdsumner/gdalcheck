@@ -1346,8 +1346,8 @@
   },
   {
     "Package": "fasterRaster",
-    "Version": "8.4.1.1",
-    "MD5sum": "98ec189aa0fdec825644b706e50759d2"
+    "Version": "8.4.1.2",
+    "MD5sum": "1cea49c743b62c3fbea4059c1fb7dd50"
   },
   {
     "Package": "fastfocal",
@@ -1501,8 +1501,8 @@
   },
   {
     "Package": "frheritage",
-    "Version": "0.1.0",
-    "MD5sum": "f6f5fde228db3641351a6a370bbcffb0"
+    "Version": "0.1.1",
+    "MD5sum": "e1c6ec5ebd52b5654ac25ac66fd22fbf"
   },
   {
     "Package": "fsr",
