@@ -1356,8 +1356,8 @@
   },
   {
     "Package": "faunabr",
-    "Version": "1.0.0",
-    "MD5sum": "f5f22487cf1e83095bf9e3f6c10f00d7"
+    "Version": "1.0.1",
+    "MD5sum": "7ab6b7e280968a364812a3630122612f"
   },
   {
     "Package": "FedData",
@@ -2971,8 +2971,8 @@
   },
   {
     "Package": "multiScaleR",
-    "Version": "0.6.6",
-    "MD5sum": "40456c307bcf81e56a264b7a4be28a07"
+    "Version": "0.6.13",
+    "MD5sum": "250941dd6d31794ac3c886ebbb4b9bc1"
   },
   {
     "Package": "MultiscaleSCP",
