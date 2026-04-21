@@ -505,6 +505,11 @@
     "MD5sum": "c878e967a43bbf298d2e964082a520b6"
   },
   {
+    "Package": "cdlsim",
+    "Version": "0.1.0",
+    "MD5sum": "b16a46c58d7a4f92dd2f6b1ce22c5fee"
+  },
+  {
     "Package": "cdlTools",
     "Version": "1.13",
     "MD5sum": "04a58a86b816857a56181b5e90df9a7e"
@@ -841,8 +846,8 @@
   },
   {
     "Package": "CSHShydRology",
-    "Version": "1.4.6",
-    "MD5sum": "c40bc0ce9cbbc935eb7c7a575ca9b61b"
+    "Version": "1.5.0",
+    "MD5sum": "f369f406f6889a362610dec865ed534f"
   },
   {
     "Package": "csodata",
@@ -1246,8 +1251,8 @@
   },
   {
     "Package": "episomer",
-    "Version": "3.0.32",
-    "MD5sum": "466fc483f61f7393a0e4587daa67f866"
+    "Version": "3.0.34",
+    "MD5sum": "1f8fceb9041678d3a1a1d43e4fb2d753"
   },
   {
     "Package": "epiviz",
@@ -1481,8 +1486,8 @@
   },
   {
     "Package": "FORTLS",
-    "Version": "2.0.0",
-    "MD5sum": "7a682208298ae15a10a56f161fe425f8"
+    "Version": "2.0.1",
+    "MD5sum": "671d2df9875eec35df07adfbac5d1582"
   },
   {
     "Package": "foto",
@@ -2351,8 +2356,8 @@
   },
   {
     "Package": "kuenm2",
-    "Version": "0.1.2",
-    "MD5sum": "d3a0be3fd8b1a8dd91ad524b34dcd85f"
+    "Version": "0.1.3",
+    "MD5sum": "58879a11fa6c5a90fb59e6b2a367453a"
   },
   {
     "Package": "LabourMarketAreas",
@@ -5116,8 +5121,8 @@
   },
   {
     "Package": "tmap",
-    "Version": "4.2",
-    "MD5sum": "48bd54003faacee26430141a6951f075"
+    "Version": "4.3",
+    "MD5sum": "408db355e0ad26676a43d31eb96765d5"
   },
   {
     "Package": "tmap.cartogram",
