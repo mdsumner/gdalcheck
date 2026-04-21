@@ -6,13 +6,13 @@ FROM ${BASE_IMAGE}
 
 ENV R_LIBS_SITE=/usr/local/lib/R/site-library
 
-# Layer 01: 49 packages
+# Layer 01: 45 packages
 COPY cache-out/layer01/ ${R_LIBS_SITE}/
 
-# Layer 02: 1510 packages
+# Layer 02: 1177 packages
 COPY cache-out/layer02/ ${R_LIBS_SITE}/
 
-# Layer 03: 824 packages
+# Layer 03: 1176 packages
 COPY cache-out/layer03/ ${R_LIBS_SITE}/
 
 # Install CLI tools
