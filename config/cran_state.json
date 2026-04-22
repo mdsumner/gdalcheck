@@ -250,6 +250,11 @@
     "MD5sum": "4c98d486a225434fc534f363e42cc1db"
   },
   {
+    "Package": "bayesiansurpriser",
+    "Version": "0.1.0",
+    "MD5sum": "554fe576f754f13bcfe41b1a8e1203a6"
+  },
+  {
     "Package": "bayesmove",
     "Version": "0.2.4",
     "MD5sum": "0f4cc178113653f4d5620524fc1a1cee"
@@ -1301,8 +1306,8 @@
   },
   {
     "Package": "eva3dm",
-    "Version": "1.11",
-    "MD5sum": "5a1314dd719ef0d676142300a1269d69"
+    "Version": "1.20",
+    "MD5sum": "21d6ff234b617a205d5f9085f14d387c"
   },
   {
     "Package": "evapoRe",
@@ -1503,6 +1508,11 @@
     "Package": "fractalforest",
     "Version": "1.0.1",
     "MD5sum": "417097870d2366807ca34069084edf36"
+  },
+  {
+    "Package": "freestiler",
+    "Version": "0.1.6",
+    "MD5sum": "faaf39344787638ac998926451298d2e"
   },
   {
     "Package": "frheritage",
@@ -2481,8 +2491,8 @@
   },
   {
     "Package": "lidR",
-    "Version": "4.3.1",
-    "MD5sum": "3424c8195ecb474a6b16e115cbf5b486"
+    "Version": "4.3.2",
+    "MD5sum": "c2161d0eeaf376b73dc982a32cd86d17"
   },
   {
     "Package": "lifeR",
@@ -2991,8 +3001,8 @@
   },
   {
     "Package": "ncdfgeom",
-    "Version": "1.1.6",
-    "MD5sum": "0148eefa1145b10ad82db50671f8dc4c"
+    "Version": "1.2.2",
+    "MD5sum": "0deb2da25b2add06d7d8cf74874b5a0e"
   },
   {
     "Package": "ndi",
@@ -3096,8 +3106,8 @@
   },
   {
     "Package": "oceanic",
-    "Version": "0.1.8",
-    "MD5sum": "b48bb0954ca6d251d6fc418b0cf1a7c9"
+    "Version": "0.1.9",
+    "MD5sum": "03c8b3b51ca031e96c593e2c5cb4c901"
   },
   {
     "Package": "oceanmap",
@@ -4395,6 +4405,11 @@
     "MD5sum": "e8c6a1e454abefba43b0a6dbd54a2b4f"
   },
   {
+    "Package": "sfReapportion",
+    "Version": "0.2.0",
+    "MD5sum": "0c38da256d99aad069e6e6f541eb9c81"
+  },
+  {
     "Package": "sftime",
     "Version": "0.3.1",
     "MD5sum": "e4e2d6c8ddc167fdc55bf5b5c3de1295"
@@ -4608,6 +4623,11 @@
     "Package": "spatialAtomizeR",
     "Version": "0.2.8",
     "MD5sum": "486d17fb12a89b384b58d940af888ac8"
+  },
+  {
+    "Package": "spatialData",
+    "Version": "1.0.0",
+    "MD5sum": "2e415c7e14e00bf9732c81781f1a502e"
   },
   {
     "Package": "SpatialDownscaling",
@@ -5518,6 +5538,11 @@
     "Package": "zippeR",
     "Version": "0.1.2",
     "MD5sum": "d1de5091bf8942d5fc1764b8d8995b21"
+  },
+  {
+    "Package": "ZonationR",
+    "Version": "1.0.1",
+    "MD5sum": "751708df15720b4fa19090350fa3c6f2"
   },
   {
     "Package": "zonebuilder",
