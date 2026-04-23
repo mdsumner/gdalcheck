@@ -376,8 +376,8 @@
   },
   {
     "Package": "BLSloadR",
-    "Version": "0.4",
-    "MD5sum": "17bc8d4493b252973f980821a9c7ad78"
+    "Version": "0.4.5",
+    "MD5sum": "b68f87a219951966da845fcb39420f96"
   },
   {
     "Package": "bluebike",
@@ -1966,8 +1966,8 @@
   },
   {
     "Package": "GREENeR",
-    "Version": "1.0.1",
-    "MD5sum": "7625883a953e5f6021dbf0a21897a1b3"
+    "Version": "1.0.2",
+    "MD5sum": "a93a73c534ca7022e528d9dbe06aec65"
   },
   {
     "Package": "greenR",
@@ -2916,8 +2916,8 @@
   },
   {
     "Package": "mop",
-    "Version": "0.1.3",
-    "MD5sum": "2a3984f4be51b3c6ac54b32dc2f32391"
+    "Version": "0.1.4",
+    "MD5sum": "297cd8d01d6833c89e99300a523d1e55"
   },
   {
     "Package": "motif",
@@ -4515,6 +4515,11 @@
     "MD5sum": "9c3ad2006a0ca101b0cf6ee75ebdd5fe"
   },
   {
+    "Package": "slxr",
+    "Version": "0.1.1",
+    "MD5sum": "8059e38772be69e41da96045008d98f6"
+  },
+  {
     "Package": "smartmap",
     "Version": "0.2.0",
     "MD5sum": "fc603617f950a36f373950206737c000"
@@ -4556,8 +4561,8 @@
   },
   {
     "Package": "soilassessment",
-    "Version": "0.3.2",
-    "MD5sum": "b158a02cbb0124bfc0a4f7f6adcdca2b"
+    "Version": "1.3.0",
+    "MD5sum": "8701fbffaf9a39cc4630a5077481dcbc"
   },
   {
     "Package": "SoilSaltIndex",
@@ -4788,6 +4793,11 @@
     "Package": "spocc",
     "Version": "1.2.4",
     "MD5sum": "7b9e5048d36a54dd1995f8e78d38e4d9"
+  },
+  {
+    "Package": "spopt",
+    "Version": "0.1.2",
+    "MD5sum": "26aa7a9369d04ed9549b77489efb60df"
   },
   {
     "Package": "SppTrend",
