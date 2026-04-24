@@ -2230,11 +2230,6 @@
     "MD5sum": "10e8cbcdae01d7ea0922113340509932"
   },
   {
-    "Package": "INLAspacetime",
-    "Version": "0.1.13",
-    "MD5sum": "e28e61854b4ac88e988ccbf146e55b5d"
-  },
-  {
     "Package": "insetplot",
     "Version": "1.4.0",
     "MD5sum": "a32a95113a7c97b9c2e805d21e23e397"
@@ -3006,8 +3001,8 @@
   },
   {
     "Package": "ndi",
-    "Version": "0.2.1",
-    "MD5sum": "f5f80519dba8a3d21353c578998bcf1b"
+    "Version": "0.2.2",
+    "MD5sum": "de3d0f46b7e432633d0eb38870530d75"
   },
   {
     "Package": "necountries",
@@ -3021,8 +3016,8 @@
   },
   {
     "Package": "neotoma2",
-    "Version": "1.0.11",
-    "MD5sum": "a8cd0944744383f6439396c46b4e573a"
+    "Version": "1.0.12",
+    "MD5sum": "c51cf83ec027cd66ed28139592f78bb5"
   },
   {
     "Package": "NetLogoR",
