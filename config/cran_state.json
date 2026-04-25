@@ -3316,8 +3316,8 @@
   },
   {
     "Package": "pep725",
-    "Version": "1.0.2",
-    "MD5sum": "71a00995b915ee52551bfbb57d26cba8"
+    "Version": "1.1.0",
+    "MD5sum": "d7f668687541fc5dfdefe458e658b198"
   },
   {
     "Package": "PersomicsArray",
