@@ -2191,8 +2191,8 @@
   },
   {
     "Package": "ILORA",
-    "Version": "0.1.0",
-    "MD5sum": "b7b8535f4743b67627cbe1b519a868ac"
+    "Version": "0.1.1",
+    "MD5sum": "8fec681764c96f87b23ce038a3992ac1"
   },
   {
     "Package": "imageRy",
@@ -3028,6 +3028,11 @@
     "Package": "netmap",
     "Version": "0.1.4",
     "MD5sum": "32ed7e363f4ca752c37b788ebe682cdb"
+  },
+  {
+    "Package": "neuroimaGene",
+    "Version": "0.1.3",
+    "MD5sum": "b573e6404c622997d33d8cfee301e2d4"
   },
   {
     "Package": "nhdplusTools",
