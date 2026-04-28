@@ -496,8 +496,8 @@
   },
   {
     "Package": "CatastRo",
-    "Version": "1.0.0",
-    "MD5sum": "f14011fb6eb286ab7f102bbe87e01cd6"
+    "Version": "1.0.1",
+    "MD5sum": "2c331f322aaeeb218f17242d2b32b76d"
   },
   {
     "Package": "CCAMLRGIS",
@@ -1411,8 +1411,8 @@
   },
   {
     "Package": "fitbitViz",
-    "Version": "1.0.7",
-    "MD5sum": "2672a19d5ca59c0a1d61bcb4b756e7d6"
+    "Version": "1.0.8",
+    "MD5sum": "f38ffaec7a175aa3eab01e350430988e"
   },
   {
     "Package": "FjordLight",
@@ -2641,8 +2641,8 @@
   },
   {
     "Package": "mapme.biodiversity",
-    "Version": "0.9.5",
-    "MD5sum": "10dba3fe2b9f2fc2960a085eb4d64423"
+    "Version": "0.9.6",
+    "MD5sum": "a9a24419210800cc13457f70aeb24224"
   },
   {
     "Package": "mapmisc",
@@ -4701,8 +4701,8 @@
   },
   {
     "Package": "spatsoc",
-    "Version": "0.2.2",
-    "MD5sum": "687c2bf91074630cd496d28d3632cdfd"
+    "Version": "0.2.13",
+    "MD5sum": "a71fe61a4aaff091a580d453c3d86c89"
   },
   {
     "Package": "spatsurv",
