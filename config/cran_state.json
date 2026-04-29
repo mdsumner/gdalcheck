@@ -415,11 +415,6 @@
     "MD5sum": "d13d9f465de7bf62940c5a287a96898b"
   },
   {
-    "Package": "camtrapR",
-    "Version": "3.0.3",
-    "MD5sum": "ef0430ca385a5c5723fafbee87d5ba0c"
-  },
-  {
     "Package": "canadamaps",
     "Version": "0.1",
     "MD5sum": "176f2be539693a14a044901e49cd1b78"
@@ -1668,11 +1663,6 @@
     "Package": "geodiv",
     "Version": "1.1.0",
     "MD5sum": "17b974c1597ee46dfef29d6b9e403196"
-  },
-  {
-    "Package": "geodl",
-    "Version": "0.3.1",
-    "MD5sum": "a1215dc2d13a3bb0ef76cf474d604398"
   },
   {
     "Package": "geodrawr",
@@ -2988,6 +2978,11 @@
     "Package": "MultiscaleSCP",
     "Version": "0.1.1",
     "MD5sum": "caddbc51277815064b36cf68ae33c32e"
+  },
+  {
+    "Package": "multiscape",
+    "Version": "1.0.6",
+    "MD5sum": "3fed031621377fa1b31de9663136e385"
   },
   {
     "Package": "naijR",
