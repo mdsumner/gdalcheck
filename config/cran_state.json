@@ -986,8 +986,8 @@
   },
   {
     "Package": "Directional",
-    "Version": "7.4",
-    "MD5sum": "a57021ca6d1a519e78e796e3bc9f8b12"
+    "Version": "7.5",
+    "MD5sum": "f78dc4ace3dc1acaddd7c0cfb20793d7"
   },
   {
     "Package": "disaggregation",
@@ -2405,6 +2405,11 @@
     "MD5sum": "a347db8fab1a35b527a429430eadac6e"
   },
   {
+    "Package": "lapop",
+    "Version": "2.1.5",
+    "MD5sum": "eac53a8f169e80790ce9b4cceb78da95"
+  },
+  {
     "Package": "latbias",
     "Version": "1.0.0",
     "MD5sum": "efcb3b175bc04688e6527eb9cbf11c44"
@@ -2921,8 +2926,8 @@
   },
   {
     "Package": "movecost",
-    "Version": "2.1",
-    "MD5sum": "da41ca144cc982053952df7dcc829710"
+    "Version": "2.2",
+    "MD5sum": "343eb1e10fd6460181d8cb084de63c5c"
   },
   {
     "Package": "movedesign",
@@ -3026,8 +3031,8 @@
   },
   {
     "Package": "neuroimaGene",
-    "Version": "0.1.3",
-    "MD5sum": "b573e6404c622997d33d8cfee301e2d4"
+    "Version": "0.1.4",
+    "MD5sum": "c3d89fc8b0f7da5fe439a40e111282e7"
   },
   {
     "Package": "nhdplusTools",
@@ -3466,8 +3471,8 @@
   },
   {
     "Package": "predicts",
-    "Version": "0.1-19",
-    "MD5sum": "519ff1e997723fa7cc695aa4e5266349"
+    "Version": "0.2-2",
+    "MD5sum": "a23c00fa920a21bd35eb9a08ffafb6dc"
   },
   {
     "Package": "PReMiuM",
@@ -3893,6 +3898,11 @@
     "Package": "RFplus",
     "Version": "1.5-4",
     "MD5sum": "32d1b84fb473a1528e2a9c2441d5dca9"
+  },
+  {
+    "Package": "rgbIndices",
+    "Version": "0.1.1",
+    "MD5sum": "5d6977d3fe68a14a7df35b1e9710de35"
   },
   {
     "Package": "rgeoda",
