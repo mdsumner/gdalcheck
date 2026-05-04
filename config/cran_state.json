@@ -2541,8 +2541,8 @@
   },
   {
     "Package": "lwgeom",
-    "Version": "0.2-15",
-    "MD5sum": "82ebe958c93f8d92e3fba5e3da1a5f41"
+    "Version": "0.2-16",
+    "MD5sum": "8d7e158637d6192c81f05fec0b8fabf9"
   },
   {
     "Package": "M3",
