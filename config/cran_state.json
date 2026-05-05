@@ -1571,8 +1571,8 @@
   },
   {
     "Package": "gdalraster",
-    "Version": "2.5.0",
-    "MD5sum": "76847575f2a9956705ee07da8d25c9a4"
+    "Version": "2.6.0",
+    "MD5sum": "9e676360c66ef686695c1e6a9ef5b8f0"
   },
   {
     "Package": "gdalUtilities",
@@ -4541,8 +4541,8 @@
   },
   {
     "Package": "smoothr",
-    "Version": "1.2.1",
-    "MD5sum": "2ba6cf99c11f2661e92855c8f697bcc2"
+    "Version": "1.3.0",
+    "MD5sum": "2a7192249cc68ee9c5d3fb4f9eead660"
   },
   {
     "Package": "smosr",
@@ -4691,8 +4691,8 @@
   },
   {
     "Package": "spatialrisk",
-    "Version": "0.7.3",
-    "MD5sum": "bbbb34fe61a5ae8b0791bd7c9c3f8b81"
+    "Version": "0.8.0",
+    "MD5sum": "e082f6ac072ac65f01dad4469d50abb7"
   },
   {
     "Package": "spatialsample",
@@ -4816,8 +4816,8 @@
   },
   {
     "Package": "spsurvey",
-    "Version": "5.6.0",
-    "MD5sum": "09695c291bcada881ae2a1486595c0c0"
+    "Version": "5.6.1",
+    "MD5sum": "53de393042ddc2011164b187cd509a72"
   },
   {
     "Package": "spup",
@@ -5081,8 +5081,8 @@
   },
   {
     "Package": "tidycensuskr",
-    "Version": "0.2.7",
-    "MD5sum": "b231d6c1c76d163de9be568cd10cc294"
+    "Version": "0.2.8",
+    "MD5sum": "e91017c83737209a8ccb4d5956faec89"
   },
   {
     "Package": "tidycountries",
