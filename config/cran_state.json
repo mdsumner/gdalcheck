@@ -2676,8 +2676,8 @@
   },
   {
     "Package": "mapsf",
-    "Version": "1.1.0",
-    "MD5sum": "de81da47c0bdfa091965f9a559629aa9"
+    "Version": "1.2.0",
+    "MD5sum": "d31c7b2aed301b51149136b51dc6992c"
   },
   {
     "Package": "mapSpain",
@@ -3845,6 +3845,11 @@
     "MD5sum": "25b11a6206be777cfffa7842cf925687"
   },
   {
+    "Package": "reems",
+    "Version": "0.1.0",
+    "MD5sum": "64d048679abfacb6bca3f62b453ecfc4"
+  },
+  {
     "Package": "ref.ICAR",
     "Version": "2.0.2",
     "MD5sum": "951e317d3af902f209f65c39cba2af07"
@@ -3916,8 +3921,8 @@
   },
   {
     "Package": "rgeopat2",
-    "Version": "0.4.0",
-    "MD5sum": "03f77aebada5de22377bc854c58d00de"
+    "Version": "0.4.1",
+    "MD5sum": "9e6c3702cf2cf778396c6f0baad7cb9e"
   },
   {
     "Package": "Rglottography",
