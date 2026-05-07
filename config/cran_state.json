@@ -1120,11 +1120,6 @@
     "MD5sum": "f904565dd1c82895141773f6fa63fd8e"
   },
   {
-    "Package": "ebvcube",
-    "Version": "0.5.2",
-    "MD5sum": "39f1d9ce27e3a34cdeca47a2a51f2153"
-  },
-  {
     "Package": "echor",
     "Version": "0.1.9",
     "MD5sum": "b912a852a0081e7b01ca31ef771c3096"
@@ -2766,8 +2761,8 @@
   },
   {
     "Package": "medfateland",
-    "Version": "2.8.1",
-    "MD5sum": "a443ee65ed43095f86e686ce98fe42bb"
+    "Version": "3.0.0",
+    "MD5sum": "1b2734ee94f9f87b36f2b70dbe2e1a14"
   },
   {
     "Package": "memgene",
@@ -2811,8 +2806,8 @@
   },
   {
     "Package": "MetricGraph",
-    "Version": "1.5.0",
-    "MD5sum": "0789da6bd11587e7d9482cf51582f7c1"
+    "Version": "1.6.0",
+    "MD5sum": "4a07d5c3c9718ad7ad5fdfcf62d73e30"
   },
   {
     "Package": "mgc",
@@ -2993,6 +2988,11 @@
     "Package": "multiscape",
     "Version": "1.0.7",
     "MD5sum": "21099e01e9ff9750dd5082cc2ad11ef4"
+  },
+  {
+    "Package": "mwmapdata",
+    "Version": "1.0.0",
+    "MD5sum": "415e92011f707e2e211aac19b3032b6c"
   },
   {
     "Package": "naijR",
@@ -4366,8 +4366,8 @@
   },
   {
     "Package": "sf",
-    "Version": "1.1-0",
-    "MD5sum": "ec00e564eea53ba10a88be12526397c5"
+    "Version": "1.1-1",
+    "MD5sum": "f944eda85dd69110b8957fa2c0b645fc"
   },
   {
     "Package": "sfarrow",
@@ -5066,8 +5066,8 @@
   },
   {
     "Package": "terra",
-    "Version": "1.9-11",
-    "MD5sum": "eab73345be6021b30424ec0ed40cd8f0"
+    "Version": "1.9-25",
+    "MD5sum": "c7e15dfbd4c29f90b89cd083e2ad1e5e"
   },
   {
     "Package": "terrainr",
