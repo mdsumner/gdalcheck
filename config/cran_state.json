@@ -26,8 +26,8 @@
   },
   {
     "Package": "aelab",
-    "Version": "1.1.1",
-    "MD5sum": "392c77f3e16bff95f038e0e20b0fda88"
+    "Version": "1.1.3",
+    "MD5sum": "203af128a3f5296eb68c4166c552638a"
   },
   {
     "Package": "affinity",
@@ -1766,8 +1766,8 @@
   },
   {
     "Package": "geospatialsuite",
-    "Version": "0.1.1",
-    "MD5sum": "e035d7907048ba7cefd0581de64bb9e7"
+    "Version": "0.2.0",
+    "MD5sum": "df7a50233e101ff6a1d7171472103e1e"
   },
   {
     "Package": "geostan",
@@ -3881,8 +3881,8 @@
   },
   {
     "Package": "resourcecode",
-    "Version": "0.5.3",
-    "MD5sum": "44354de7125cd9b1082038a76d5b8266"
+    "Version": "0.5.4",
+    "MD5sum": "0ec3f219620dd8ff2f4c6d73f22d9bf3"
   },
   {
     "Package": "restoptr",
@@ -4851,8 +4851,8 @@
   },
   {
     "Package": "SSIMmap",
-    "Version": "0.1.1",
-    "MD5sum": "ff654bfcea1d380a010727024d1512fd"
+    "Version": "0.4.0",
+    "MD5sum": "37d9958f83178dcb6cd972ea3b6a159a"
   },
   {
     "Package": "SSN2",
@@ -5215,6 +5215,11 @@
     "MD5sum": "3af423b57d48463b16573f206ecec203"
   },
   {
+    "Package": "toro",
+    "Version": "0.1.0",
+    "MD5sum": "621c7d6a4eab9e7e4bc858e405c0a612"
+  },
+  {
     "Package": "track2KBA",
     "Version": "1.1.3",
     "MD5sum": "1bf434f6331cd9f56d2d8753a02db76c"
@@ -5433,6 +5438,11 @@
     "Package": "walkboutr",
     "Version": "0.6.0",
     "MD5sum": "8386a3709bed04e35c6f34301945d711"
+  },
+  {
+    "Package": "wallace",
+    "Version": "2.2.1",
+    "MD5sum": "a49991269f1133367da05af3ec7e33d9"
   },
   {
     "Package": "WaterBalanceR",
