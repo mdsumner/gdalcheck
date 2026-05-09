@@ -1251,8 +1251,8 @@
   },
   {
     "Package": "episomer",
-    "Version": "3.0.34",
-    "MD5sum": "1f8fceb9041678d3a1a1d43e4fb2d753"
+    "Version": "3.0.35",
+    "MD5sum": "ad86d107a73ae223751aca3fcc71553c"
   },
   {
     "Package": "epiviz",
@@ -1341,8 +1341,8 @@
   },
   {
     "Package": "fastbioclim",
-    "Version": "0.4.1",
-    "MD5sum": "535e27c0027d9073eb44facc2abab5a1"
+    "Version": "0.4.2",
+    "MD5sum": "1befa5aaa56f309e74839f90369df927"
   },
   {
     "Package": "fasterize",
@@ -1611,8 +1611,8 @@
   },
   {
     "Package": "geoAr",
-    "Version": "1.0.0",
-    "MD5sum": "06db4255fc02c1f410f541ac24bbe518"
+    "Version": "1.2.2",
+    "MD5sum": "50b28b0c6b2735ab25dcb45e5232c3c6"
   },
   {
     "Package": "geoarrow",
@@ -2791,8 +2791,8 @@
   },
   {
     "Package": "meteoland",
-    "Version": "2.2.6",
-    "MD5sum": "c415d09c7a7ab60547fc087d02b3bacd"
+    "Version": "2.2.7",
+    "MD5sum": "e66387384ef2782c7d93decae94b7502"
   },
   {
     "Package": "meteospain",
@@ -3905,6 +3905,11 @@
     "MD5sum": "e90d15c25ea46cff678404fa8cb594d4"
   },
   {
+    "Package": "RFmerge",
+    "Version": "0.3-3",
+    "MD5sum": "263127ffc11546379693c026b3a2005e"
+  },
+  {
     "Package": "RFplus",
     "Version": "1.5-4",
     "MD5sum": "32d1b84fb473a1528e2a9c2441d5dca9"
@@ -4966,8 +4971,8 @@
   },
   {
     "Package": "subincomeR",
-    "Version": "0.4.0",
-    "MD5sum": "687a6d0c97ce18d891639f37a6bcc781"
+    "Version": "0.5.0",
+    "MD5sum": "a44d024ecf7823fbf91ca55586bee611"
   },
   {
     "Package": "sugarbag",
