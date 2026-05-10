@@ -3411,8 +3411,8 @@
   },
   {
     "Package": "plotdap",
-    "Version": "1.1.1",
-    "MD5sum": "b6d52923bf2de50e7e6966221413a945"
+    "Version": "1.2.0",
+    "MD5sum": "51970ac8c7cb3e359b9f8bfcd973fce6"
   },
   {
     "Package": "plusCode2",
@@ -4016,8 +4016,8 @@
   },
   {
     "Package": "rmapshaper",
-    "Version": "0.6.0",
-    "MD5sum": "c2da4a46cdff130565269a0605d39912"
+    "Version": "0.6.1",
+    "MD5sum": "f96dfadd2b271164d79be49f6340e6ac"
   },
   {
     "Package": "rmapzen",
@@ -4426,8 +4426,8 @@
   },
   {
     "Package": "sftime",
-    "Version": "0.3.1",
-    "MD5sum": "e4e2d6c8ddc167fdc55bf5b5c3de1295"
+    "Version": "0.3.2",
+    "MD5sum": "cce3dfb45b84c38ad4990eb2456681aa"
   },
   {
     "Package": "sftrack",
@@ -5071,8 +5071,8 @@
   },
   {
     "Package": "terra",
-    "Version": "1.9-25",
-    "MD5sum": "c7e15dfbd4c29f90b89cd083e2ad1e5e"
+    "Version": "1.9-27",
+    "MD5sum": "2a1aa70d679256f92161c1a4430c6ed8"
   },
   {
     "Package": "terrainr",
@@ -5171,23 +5171,23 @@
   },
   {
     "Package": "tmap.cartogram",
-    "Version": "0.2",
-    "MD5sum": "314de6cfd8489a9ece741c486c136501"
+    "Version": "0.2-1",
+    "MD5sum": "df7f297ffceec56746d0872f9ae02bf6"
   },
   {
     "Package": "tmap.glyphs",
-    "Version": "0.1",
-    "MD5sum": "e3035a6884fa9f071369710529eb6190"
+    "Version": "0.1-1",
+    "MD5sum": "f17e9a99852e9807887c0c203810a819"
   },
   {
     "Package": "tmap.mapgl",
-    "Version": "0.1.0",
-    "MD5sum": "9142a819eaf95a2cbc1945f6655c7686"
+    "Version": "0.2-1",
+    "MD5sum": "df2ecdd9b185231e618bc8e26095e6d3"
   },
   {
     "Package": "tmap.networks",
-    "Version": "0.1",
-    "MD5sum": "85a7bff9277250632290f2114915e1dc"
+    "Version": "0.2",
+    "MD5sum": "06bb434ccbf2252b06c33e254c1b94b0"
   },
   {
     "Package": "tmaptools",
