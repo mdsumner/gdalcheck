@@ -46,8 +46,8 @@
   },
   {
     "Package": "agricolaeplotr",
-    "Version": "0.6.1",
-    "MD5sum": "9a96336c3487dc850f2bff6d3f93598c"
+    "Version": "1.0.0",
+    "MD5sum": "500d0745944c9d2663f6959dce6a98c0"
   },
   {
     "Package": "agriwater",
@@ -1176,8 +1176,8 @@
   },
   {
     "Package": "eks",
-    "Version": "1.1.2",
-    "MD5sum": "4b7fbfa0955486de4d6523933d41a515"
+    "Version": "1.1.3",
+    "MD5sum": "424d92dfadff52224f3359bce6bb60f5"
   },
   {
     "Package": "elevatr",
@@ -1423,11 +1423,6 @@
     "Package": "flexurba",
     "Version": "0.2.3",
     "MD5sum": "9bee159948874cbd0cab54ed3c71ca99"
-  },
-  {
-    "Package": "flightplot",
-    "Version": "0.1.0",
-    "MD5sum": "75789f9d79e08dd851d592275aaf5128"
   },
   {
     "Package": "FLightR",
@@ -4211,8 +4206,8 @@
   },
   {
     "Package": "S4DM",
-    "Version": "0.0.1",
-    "MD5sum": "9a54edf01d897c7263fd3b485f990e1a"
+    "Version": "0.0.2",
+    "MD5sum": "640144c54d9725b0dd88339a59bac2aa"
   },
   {
     "Package": "sabre",
