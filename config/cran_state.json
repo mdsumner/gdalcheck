@@ -156,8 +156,8 @@
   },
   {
     "Package": "arete",
-    "Version": "0.1",
-    "MD5sum": "71b1ae61d9962eb84d7b02be0ee5ddb4"
+    "Version": "0.2",
+    "MD5sum": "d1cabdb5e0afc9f05ed890c866ffc740"
   },
   {
     "Package": "Argentum",
@@ -2571,8 +2571,8 @@
   },
   {
     "Package": "manureshed",
-    "Version": "0.1.4",
-    "MD5sum": "4721139ca84bdac4b0c8e6f19728c8ce"
+    "Version": "0.1.5",
+    "MD5sum": "9094529923b00e20e8903153ea6370a4"
   },
   {
     "Package": "mapboxapi",
@@ -4693,6 +4693,11 @@
     "Package": "spatialreg",
     "Version": "1.4-3",
     "MD5sum": "d93d3644df84362beaff02f474ed351b"
+  },
+  {
+    "Package": "spatialRegroup",
+    "Version": "0.1.0",
+    "MD5sum": "3bafcdf4636822ce16078d20edae2d2b"
   },
   {
     "Package": "spatialrisk",
