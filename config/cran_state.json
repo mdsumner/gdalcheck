@@ -456,8 +456,8 @@
   },
   {
     "Package": "caretSDM",
-    "Version": "1.5",
-    "MD5sum": "9035739fca73156655bdec96aaedc780"
+    "Version": "1.8.3",
+    "MD5sum": "4a86c50d818cf8cedb672afadea4dfd2"
   },
   {
     "Package": "cartograflow",
@@ -918,6 +918,11 @@
     "Package": "dartR.spatial",
     "Version": "1.2.2",
     "MD5sum": "f9b6e7e34cfcd20cd5b7face0548d8ef"
+  },
+  {
+    "Package": "datamuseum",
+    "Version": "0.1.0",
+    "MD5sum": "b6355ac20ed8c3afe494a82e6e0be40a"
   },
   {
     "Package": "dataRetrieval",
@@ -1501,8 +1506,8 @@
   },
   {
     "Package": "freestiler",
-    "Version": "0.1.6",
-    "MD5sum": "faaf39344787638ac998926451298d2e"
+    "Version": "0.1.7",
+    "MD5sum": "c4ace47527f07664cb1d9eee710d80f0"
   },
   {
     "Package": "frheritage",
@@ -1526,8 +1531,8 @@
   },
   {
     "Package": "GapAnalysis",
-    "Version": "2.0.0",
-    "MD5sum": "756d095f576a3570d6b4126316ff9108"
+    "Version": "2.0.2",
+    "MD5sum": "99094e9e68206ea5b7a5f963dd744fac"
   },
   {
     "Package": "gateR",
@@ -2176,8 +2181,8 @@
   },
   {
     "Package": "ILORA",
-    "Version": "0.1.1",
-    "MD5sum": "8fec681764c96f87b23ce038a3992ac1"
+    "Version": "0.1.2",
+    "MD5sum": "22ff379391f83950280e2cc066ca42cd"
   },
   {
     "Package": "imageRy",
@@ -2983,6 +2988,11 @@
     "Package": "multiscape",
     "Version": "1.0.7",
     "MD5sum": "21099e01e9ff9750dd5082cc2ad11ef4"
+  },
+  {
+    "Package": "mwmap",
+    "Version": "1.0.0",
+    "MD5sum": "b888112db2e780e62208779be382f5d6"
   },
   {
     "Package": "mwmapdata",
@@ -5078,6 +5088,11 @@
     "Package": "terrainr",
     "Version": "0.7.6",
     "MD5sum": "a6ff3bb5226d7dbd750f77bdcba77b11"
+  },
+  {
+    "Package": "terralink",
+    "Version": "1.8.0",
+    "MD5sum": "8e13bf77c5402861e249f49fea26cbe5"
   },
   {
     "Package": "theiaR",
