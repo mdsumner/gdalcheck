@@ -1816,8 +1816,8 @@
   },
   {
     "Package": "ggdibbler",
-    "Version": "0.6.1",
-    "MD5sum": "ab2e7c6eafef98211395ebd6c9df053a"
+    "Version": "0.6.5",
+    "MD5sum": "dc9951d077f8b19743025294083e96f9"
   },
   {
     "Package": "ggfields",
@@ -2041,8 +2041,8 @@
   },
   {
     "Package": "h3sdm",
-    "Version": "0.1.0",
-    "MD5sum": "cc9aab3d4cec3b8b0b521e537ada4b6e"
+    "Version": "0.1.1",
+    "MD5sum": "559fd3206f944272e340bc872ebc3929"
   },
   {
     "Package": "habtools",
@@ -3383,6 +3383,11 @@
     "Package": "PiC",
     "Version": "1.2.7",
     "MD5sum": "c464252e814973e6ab52bfa4790f0cf8"
+  },
+  {
+    "Package": "pkmapr",
+    "Version": "1.2.1",
+    "MD5sum": "34d8e2a4ddfe386bbfb278888f3545e8"
   },
   {
     "Package": "PL94171",
@@ -4926,8 +4931,8 @@
   },
   {
     "Package": "stcos",
-    "Version": "0.3.1",
-    "MD5sum": "a9d67760639af647d4b847c3f11c843d"
+    "Version": "0.3.2",
+    "MD5sum": "5ab0e14216ee583820f558e0733c5d14"
   },
   {
     "Package": "stelfi",
