@@ -1,8 +1,8 @@
 [
   {
     "Package": "a5R",
-    "Version": "0.3.1",
-    "MD5sum": "f9d4ead842fe738baee708f89d1c1ac7"
+    "Version": "0.4.0",
+    "MD5sum": "a7463e3c08870e5cf0824595315dd9d7"
   },
   {
     "Package": "aboveR",
@@ -1951,8 +1951,8 @@
   },
   {
     "Package": "grec",
-    "Version": "1.6.3",
-    "MD5sum": "3cbeea72f090fc79aa52f71b12fdc763"
+    "Version": "1.6.4",
+    "MD5sum": "ef2a1d260ae737369776d9b6902c9b09"
   },
   {
     "Package": "GREENeR",
@@ -3200,11 +3200,6 @@
     "MD5sum": "47dbff7a3c841b1f70eaf45f6839789c"
   },
   {
-    "Package": "osc",
-    "Version": "1.0.5",
-    "MD5sum": "6863bc3cda2181a6ff44f085b97e3f09"
-  },
-  {
     "Package": "osmextract",
     "Version": "0.6.0",
     "MD5sum": "1e88d72c8fa6619a4665b2647851bf56"
@@ -4190,11 +4185,6 @@
     "MD5sum": "61a9578ccf7ae7e50160bacb81f43748"
   },
   {
-    "Package": "rts2",
-    "Version": "1.0.2",
-    "MD5sum": "10cb72e86c9b8ab11c6ce02b54ef9424"
-  },
-  {
     "Package": "RuHere",
     "Version": "1.0.1",
     "MD5sum": "f6ec1175c64b79b9148edbaad89a7766"
@@ -4291,8 +4281,8 @@
   },
   {
     "Package": "SchoolDataIT",
-    "Version": "0.2.12",
-    "MD5sum": "eca25a67a18590340586e7abea38d7f5"
+    "Version": "0.2.13",
+    "MD5sum": "2c452ce8170601caa968e7f9b9dc4489"
   },
   {
     "Package": "sdcSpatial",
@@ -4426,8 +4416,8 @@
   },
   {
     "Package": "sfnetworks",
-    "Version": "0.6.5",
-    "MD5sum": "e8c6a1e454abefba43b0a6dbd54a2b4f"
+    "Version": "0.6.6",
+    "MD5sum": "dc5eece902956fd98dfdcf3a313a90f1"
   },
   {
     "Package": "sfReapportion",
@@ -4966,8 +4956,8 @@
   },
   {
     "Package": "StreamCatTools",
-    "Version": "0.10.0",
-    "MD5sum": "4253ca39510eeccd2711e47efe808198"
+    "Version": "0.11.0",
+    "MD5sum": "ad2c434272df34be5c06a23a87f542e7"
   },
   {
     "Package": "streamDepletr",
