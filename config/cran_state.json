@@ -3250,6 +3250,11 @@
     "MD5sum": "3958ce78a82e263d124e5a015308aabe"
   },
   {
+    "Package": "oystermapR",
+    "Version": "1.4.0",
+    "MD5sum": "80c9710af4efd7b3af8c85bc81f1f559"
+  },
+  {
     "Package": "ozmaps",
     "Version": "0.4.5",
     "MD5sum": "dc3323dd9ca39fda45bb4357457c1b94"
