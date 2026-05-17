@@ -1566,8 +1566,8 @@
   },
   {
     "Package": "gdalraster",
-    "Version": "2.6.0",
-    "MD5sum": "9e676360c66ef686695c1e6a9ef5b8f0"
+    "Version": "2.6.1",
+    "MD5sum": "1b5e6eee833d12d3aa9f1c8ff2d5e7e7"
   },
   {
     "Package": "gdalUtilities",
