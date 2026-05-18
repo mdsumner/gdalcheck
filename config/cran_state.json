@@ -1091,8 +1091,8 @@
   },
   {
     "Package": "duckspatial",
-    "Version": "1.0.0",
-    "MD5sum": "d03c5adcb9044aee8bd3a72355e993eb"
+    "Version": "1.1.0",
+    "MD5sum": "f906b6aa037f5406ea5a23b47b51ea44"
   },
   {
     "Package": "dwp",
@@ -1251,8 +1251,8 @@
   },
   {
     "Package": "epiR",
-    "Version": "2.0.92",
-    "MD5sum": "14b2e1a57a23399a070fcc9e2bbfcda2"
+    "Version": "2.0.93",
+    "MD5sum": "2f4a37f4a29eb8dd463ed8114fa7dd54"
   },
   {
     "Package": "episomer",
@@ -1933,6 +1933,11 @@
     "Package": "gps.track",
     "Version": "1.0.0",
     "MD5sum": "4b86b2e06d759dbad9bf421866b89b41"
+  },
+  {
+    "Package": "GPSeqClus",
+    "Version": "1.5.0",
+    "MD5sum": "4aa4b264492daee5db7b41348cb4eb77"
   },
   {
     "Package": "grainscape",
@@ -4651,8 +4656,8 @@
   },
   {
     "Package": "spatialData",
-    "Version": "1.0.0",
-    "MD5sum": "2e415c7e14e00bf9732c81781f1a502e"
+    "Version": "1.0.1",
+    "MD5sum": "827f87046d4c6acf7a5202d7c157880d"
   },
   {
     "Package": "SpatialDownscaling",
