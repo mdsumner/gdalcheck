@@ -3741,8 +3741,8 @@
   },
   {
     "Package": "RcamelsCL",
-    "Version": "0.1-11",
-    "MD5sum": "df667d1a68db0d12f0874dccbc481c92"
+    "Version": "0.2-0",
+    "MD5sum": "49b7ac3f78811d53ad9348b3b1434009"
   },
   {
     "Package": "rcarbon",
@@ -4441,8 +4441,8 @@
   },
   {
     "Package": "sftrack",
-    "Version": "0.5.4",
-    "MD5sum": "c7c5b45ad63d1b19583d6ad2b5884d4c"
+    "Version": "0.5.5",
+    "MD5sum": "15fbe3079627c560105ead9690cda04e"
   },
   {
     "Package": "sgapi",
@@ -4555,11 +4555,6 @@
     "MD5sum": "45c2b8b6c5fad481ec6daaa59a343ebc"
   },
   {
-    "Package": "SMITIDstruct",
-    "Version": "0.0.5",
-    "MD5sum": "6eab4948f9f0e34c061f4ba262f51173"
-  },
-  {
     "Package": "smoothr",
     "Version": "1.3.0",
     "MD5sum": "2a7192249cc68ee9c5d3fb4f9eead660"
@@ -4606,8 +4601,8 @@
   },
   {
     "Package": "SpaDES.core",
-    "Version": "3.0.4",
-    "MD5sum": "5efcee7e7a2c33e02d5f70ee76ce12ba"
+    "Version": "3.1.0",
+    "MD5sum": "457908a39488f25fddb0da5d1dfd2fa6"
   },
   {
     "Package": "SpaDES.tools",
@@ -5176,8 +5171,8 @@
   },
   {
     "Package": "tinyVAST",
-    "Version": "1.5.1",
-    "MD5sum": "f556bde6d4953ef00e8adef1581d7285"
+    "Version": "1.6.0",
+    "MD5sum": "bcf7afff4079fed472b2c749c93630c0"
   },
   {
     "Package": "tissot",
@@ -5445,11 +5440,6 @@
     "MD5sum": "b7b81cdb1a79568ddffbbaabcfca23e8"
   },
   {
-    "Package": "voluModel",
-    "Version": "0.2.3",
-    "MD5sum": "bdfdfa393b6506ce26fc3e6403d728b5"
-  },
-  {
     "Package": "vostokR",
     "Version": "0.2.1",
     "MD5sum": "3b1d548680b02579a55173b8751769b3"
@@ -5576,8 +5566,8 @@
   },
   {
     "Package": "worldmet",
-    "Version": "1.0.0",
-    "MD5sum": "00f9cc060936bc4288e326255be9fc6b"
+    "Version": "1.1.0",
+    "MD5sum": "02feb027c42b4fee2894147b7f5d80c5"
   },
   {
     "Package": "wpeR",
