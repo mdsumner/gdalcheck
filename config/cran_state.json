@@ -1795,11 +1795,6 @@
     "MD5sum": "7bbed52c1a3f22782695edd984977a1d"
   },
   {
-    "Package": "GeoTox",
-    "Version": "0.3.0",
-    "MD5sum": "02c2f49c1366a829e413b2b84bedf15c"
-  },
-  {
     "Package": "geoTS",
     "Version": "0.1.10",
     "MD5sum": "5bd20067ba3d8372c76d48eea86c8645"
@@ -3361,8 +3356,8 @@
   },
   {
     "Package": "PHENTHAUproc",
-    "Version": "1.1.1",
-    "MD5sum": "55e37647f6f3156343c2a5d3c19f3907"
+    "Version": "1.1.2",
+    "MD5sum": "2e8557032faf0953bbb117a12aa3c6f4"
   },
   {
     "Package": "photon",
@@ -3611,8 +3606,8 @@
   },
   {
     "Package": "r5r",
-    "Version": "2.3.0",
-    "MD5sum": "80697ac5e2df2429bee9f451e6b3c1dc"
+    "Version": "2.4.0",
+    "MD5sum": "d4ebddfe4f4a2f2f4f29c68f250aed75"
   },
   {
     "Package": "r5rgui",
@@ -3888,6 +3883,11 @@
     "Package": "remote",
     "Version": "1.2.3",
     "MD5sum": "a38aa569aa8496a48468b7ac9d3f0469"
+  },
+  {
+    "Package": "rerddapUtils",
+    "Version": "1.0.0",
+    "MD5sum": "b860a3f08a38e8af7275f7bd572bcf8a"
   },
   {
     "Package": "rerddapXtracto",
@@ -4661,8 +4661,8 @@
   },
   {
     "Package": "spatialEco",
-    "Version": "2.0-4",
-    "MD5sum": "b8e7f25d17b3a96b4d94b1396c2ecbf3"
+    "Version": "2.0-5",
+    "MD5sum": "48d939e4d424fe631650d846f40818a1"
   },
   {
     "Package": "spatialGE",
@@ -5101,8 +5101,8 @@
   },
   {
     "Package": "tidycensus",
-    "Version": "1.7.5",
-    "MD5sum": "3d9ddf56c71f221e50ac444963bdc391"
+    "Version": "1.8.0",
+    "MD5sum": "76b413b8fc297d126d757b8e7fe61226"
   },
   {
     "Package": "tidycensuskr",
@@ -5121,8 +5121,8 @@
   },
   {
     "Package": "tidypopgen",
-    "Version": "0.4.3",
-    "MD5sum": "3e7f94a7d54375784a1d46b01aef5a90"
+    "Version": "0.4.4",
+    "MD5sum": "e5e594d55fe8e64644046fc83a99079d"
   },
   {
     "Package": "tidyrgee",
