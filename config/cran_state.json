@@ -1626,8 +1626,8 @@
   },
   {
     "Package": "geobr",
-    "Version": "1.9.1",
-    "MD5sum": "e4dac1a1183c23c3112c13297ab779f4"
+    "Version": "2.0.0",
+    "MD5sum": "6eeceda9be2bfe2e92378edfc28df669"
   },
   {
     "Package": "geocausal",
@@ -1803,6 +1803,11 @@
     "Package": "GeoWeightedModel",
     "Version": "1.0.3",
     "MD5sum": "b95f892227654fe8edbb5bc695fe8fc4"
+  },
+  {
+    "Package": "getCRUCLdata",
+    "Version": "2.0.0",
+    "MD5sum": "5562a71fe0e18591dff5381b5916e269"
   },
   {
     "Package": "ggautomap",
@@ -3161,8 +3166,8 @@
   },
   {
     "Package": "openairmaps",
-    "Version": "0.10.0",
-    "MD5sum": "539541a23904fdbd2bc96084c06fe087"
+    "Version": "0.10.1",
+    "MD5sum": "5c55413ff20412976365980565d10d3d"
   },
   {
     "Package": "opendatatoronto",
