@@ -326,8 +326,8 @@
   },
   {
     "Package": "biomod2",
-    "Version": "4.3-4-5",
-    "MD5sum": "705ef633d1b20153b08ae277b63562a0"
+    "Version": "4.3-4-6",
+    "MD5sum": "9096e163209595b3c8d3deb250e95e51"
   },
   {
     "Package": "bioRad",
@@ -2146,8 +2146,8 @@
   },
   {
     "Package": "hydroloom",
-    "Version": "1.1.3",
-    "MD5sum": "fd33b96d4aabc4206d775c81e5dabf34"
+    "Version": "1.2.0",
+    "MD5sum": "c00b3d1e03fe7b07d43b7f5f86d381ef"
   },
   {
     "Package": "hyfo",
@@ -4611,8 +4611,8 @@
   },
   {
     "Package": "SpaDES.core",
-    "Version": "3.1.0",
-    "MD5sum": "457908a39488f25fddb0da5d1dfd2fa6"
+    "Version": "3.1.2",
+    "MD5sum": "0c048a5a48d5f357ce7ec9865e40738f"
   },
   {
     "Package": "SpaDES.tools",
@@ -5448,6 +5448,11 @@
     "Package": "vmsae",
     "Version": "0.1.2",
     "MD5sum": "b7b81cdb1a79568ddffbbaabcfca23e8"
+  },
+  {
+    "Package": "voluModel",
+    "Version": "0.2.4",
+    "MD5sum": "76903cc4c6853e2a13eb275b3e9e48b9"
   },
   {
     "Package": "vostokR",
