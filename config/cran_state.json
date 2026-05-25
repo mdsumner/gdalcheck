@@ -1636,8 +1636,8 @@
   },
   {
     "Package": "geocausal",
-    "Version": "0.4.0",
-    "MD5sum": "d57c1058f1631bb1906bc0be32e4b22f"
+    "Version": "0.4.1",
+    "MD5sum": "776717b41fdb02ea0a9717579839edc8"
   },
   {
     "Package": "geocmeans",
@@ -1646,8 +1646,8 @@
   },
   {
     "Package": "geocodebr",
-    "Version": "0.6.2",
-    "MD5sum": "177e8b503aa84666d075092a0dcaa610"
+    "Version": "0.6.3",
+    "MD5sum": "6f000b7199272cd456a3c453f07efb3c"
   },
   {
     "Package": "geocomplexity",
@@ -1831,8 +1831,8 @@
   },
   {
     "Package": "ggincerta",
-    "Version": "0.1.0",
-    "MD5sum": "1961fdfe334456f7c3b354f1f70377d0"
+    "Version": "0.2.0",
+    "MD5sum": "d7be3aa6c30de020b09d2e6704fed3bd"
   },
   {
     "Package": "ggmapcn",
@@ -4180,11 +4180,6 @@
     "MD5sum": "16d8cadbad040fda4fa3ccc5523d20b6"
   },
   {
-    "Package": "rTLsDeep",
-    "Version": "0.0.5",
-    "MD5sum": "cd05af0882752751facb2f6560f9aaa3"
-  },
-  {
     "Package": "rtop",
     "Version": "0.6-17",
     "MD5sum": "85b10a3e62265716a50b3de068035d6d"
@@ -4543,11 +4538,6 @@
     "Package": "slippymath",
     "Version": "0.3.1",
     "MD5sum": "365bbf2ac6ed08c05084bae8a7c7dc2a"
-  },
-  {
-    "Package": "slopes",
-    "Version": "1.0.1",
-    "MD5sum": "9c3ad2006a0ca101b0cf6ee75ebdd5fe"
   },
   {
     "Package": "slxr",
@@ -5036,8 +5026,8 @@
   },
   {
     "Package": "swash",
-    "Version": "2.0.0",
-    "MD5sum": "a98f75d5b09fb4e8417d0ebd197cb673"
+    "Version": "2.0.1",
+    "MD5sum": "99c99babf7b27b8b410c5885d3726e81"
   },
   {
     "Package": "swfscDAS",
