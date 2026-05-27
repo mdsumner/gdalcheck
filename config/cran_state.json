@@ -3056,8 +3056,8 @@
   },
   {
     "Package": "nhdplusTools",
-    "Version": "1.4.2",
-    "MD5sum": "7113a6570a77eedeb33868bd5f025aea"
+    "Version": "1.5.0",
+    "MD5sum": "34db4dd6b82e44becdf3fa5eebc729cd"
   },
   {
     "Package": "nhdR",
@@ -4611,8 +4611,8 @@
   },
   {
     "Package": "spanishoddata",
-    "Version": "0.2.4",
-    "MD5sum": "5890c613c46790a2df5e146ce0e81fc5"
+    "Version": "0.2.5",
+    "MD5sum": "2ee4e953daa79d38b0724d5bc3c1720b"
   },
   {
     "Package": "spanner",
