@@ -931,8 +931,8 @@
   },
   {
     "Package": "dataRetrieval",
-    "Version": "2.7.24",
-    "MD5sum": "3135e9de2ed110fa76e00406160bc545"
+    "Version": "2.7.25",
+    "MD5sum": "f7298133644bad9147b6bcc7fcaeac68"
   },
   {
     "Package": "datazoom.amazonia",
@@ -948,6 +948,11 @@
     "Package": "daymetr",
     "Version": "1.7.1",
     "MD5sum": "6020a59b5f86dc85d608a9e1a80552b3"
+  },
+  {
+    "Package": "dbSpatial",
+    "Version": "0.1.1",
+    "MD5sum": "badbbf41119be1cc0e7882020ee4c588"
   },
   {
     "Package": "dci",
@@ -1328,6 +1333,11 @@
     "Package": "exactextractr",
     "Version": "0.10.1",
     "MD5sum": "72464b4133d6ccee0c5a6c4c27febfaa"
+  },
+  {
+    "Package": "explodemap",
+    "Version": "0.2.0",
+    "MD5sum": "cdcabd2a07f8f784aaad5a32751baf7d"
   },
   {
     "Package": "ExposR",
@@ -2305,11 +2315,6 @@
     "MD5sum": "94fb9736dd96d5e301517f67f572e924"
   },
   {
-    "Package": "itsdm",
-    "Version": "0.2.2",
-    "MD5sum": "7a3674443d2fee3bd9eb227a8377e26c"
-  },
-  {
     "Package": "jmastats",
     "Version": "0.3.0",
     "MD5sum": "c395ac41af59a6ab15317a150c5ff930"
@@ -2941,8 +2946,8 @@
   },
   {
     "Package": "movedesign",
-    "Version": "0.3.2",
-    "MD5sum": "81445643334e70ec982cc87faac06c27"
+    "Version": "0.3.3",
+    "MD5sum": "c31321e586a23caab3ec6781a0eb55ed"
   },
   {
     "Package": "movegroup",
@@ -4351,8 +4356,8 @@
   },
   {
     "Package": "secr",
-    "Version": "5.4.2",
-    "MD5sum": "5e06355c072d9d71837f42173894bda2"
+    "Version": "5.4.3",
+    "MD5sum": "c6424f3366651735ef8f864d5be29d4c"
   },
   {
     "Package": "secrdesign",
