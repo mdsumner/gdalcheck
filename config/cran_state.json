@@ -1231,8 +1231,8 @@
   },
   {
     "Package": "enmpa",
-    "Version": "0.2.3",
-    "MD5sum": "d891a85476931ef239ff2f80de05443b"
+    "Version": "0.2.4",
+    "MD5sum": "64c4c144c9be78d482ef2fc6824f336f"
   },
   {
     "Package": "enmSdmX",
@@ -1306,8 +1306,8 @@
   },
   {
     "Package": "esviz",
-    "Version": "0.0.2",
-    "MD5sum": "c01c6ceb7d154eb0d89772f2cabdb450"
+    "Version": "0.0.3",
+    "MD5sum": "55a0ea6bc3821673103895b583816d54"
   },
   {
     "Package": "Euclimatch",
@@ -1318,6 +1318,11 @@
     "Package": "eva3dm",
     "Version": "1.20",
     "MD5sum": "21d6ff234b617a205d5f9085f14d387c"
+  },
+  {
+    "Package": "evacpath",
+    "Version": "0.1.0",
+    "MD5sum": "cf4ede52dcb3d1682fc363f8bb003f78"
   },
   {
     "Package": "evapoRe",
@@ -1706,8 +1711,8 @@
   },
   {
     "Package": "geogrid",
-    "Version": "0.1.2",
-    "MD5sum": "8791562d156b4f9e9b338c1947e496e3"
+    "Version": "0.1.3",
+    "MD5sum": "ad7f0120d8a83ff7f563baa05b2a9adc"
   },
   {
     "Package": "geohabnet",
@@ -2061,8 +2066,8 @@
   },
   {
     "Package": "h3sdm",
-    "Version": "0.1.2",
-    "MD5sum": "9556fa88105ba15a81d47a47450bdfff"
+    "Version": "0.1.3",
+    "MD5sum": "17522c6f8752e4cabbc9d4069fd24de3"
   },
   {
     "Package": "habtools",
@@ -4145,11 +4150,6 @@
     "MD5sum": "22a57aad8062b7d7f39ebc0d3461fd2f"
   },
   {
-    "Package": "rsat",
-    "Version": "0.1.21",
-    "MD5sum": "a46d3e29447e2cfb320cecfc31147bec"
-  },
-  {
     "Package": "rsi",
     "Version": "0.3.3",
     "MD5sum": "5563742eab2df99c2cddfbab6e9cbd73"
@@ -5473,11 +5473,6 @@
     "Package": "WaterBalanceR",
     "Version": "0.1.21",
     "MD5sum": "e6422e90e902a2b4ad92f019b50ee5b6"
-  },
-  {
-    "Package": "waterquality",
-    "Version": "1.0.0",
-    "MD5sum": "67015c1ccf726d97aa9520ba5bfd1cd3"
   },
   {
     "Package": "waver",
