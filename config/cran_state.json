@@ -290,6 +290,11 @@
     "MD5sum": "d1b0d98b2b3e77dac85b63fb84291c93"
   },
   {
+    "Package": "bean",
+    "Version": "0.2.0",
+    "MD5sum": "b36cf76d1cf1661450027ad1b18562a2"
+  },
+  {
     "Package": "BeeBDC",
     "Version": "1.3.4",
     "MD5sum": "e54910573b29a86ebee04467cfbde21e"
@@ -1138,6 +1143,11 @@
     "Package": "ebirdst",
     "Version": "3.2023.1",
     "MD5sum": "f904565dd1c82895141773f6fa63fd8e"
+  },
+  {
+    "Package": "ebvcube",
+    "Version": "0.5.3",
+    "MD5sum": "9bd05536eaadde03d29eb1b919ead1cb"
   },
   {
     "Package": "echor",
@@ -1998,6 +2008,11 @@
     "Package": "greenSD",
     "Version": "0.1.1",
     "MD5sum": "f4111c69d317050815547aba3cc009d0"
+  },
+  {
+    "Package": "griddy",
+    "Version": "0.1.0",
+    "MD5sum": "fcbf136309833e77f62593fa4f850754"
   },
   {
     "Package": "gridpattern",
