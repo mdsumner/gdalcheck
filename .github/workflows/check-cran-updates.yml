@@ -2,7 +2,7 @@ name: Check CRAN for updates
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # 6am UTC daily
+    - cron: '0 6 1 * *'  # 6am UTC daily
   workflow_dispatch:
 
 permissions:
