@@ -991,8 +991,8 @@
   },
   {
     "Package": "deprivateR",
-    "Version": "0.1.0",
-    "MD5sum": "067ecd7e268075722d0129e9ecc5d25e"
+    "Version": "0.2.0",
+    "MD5sum": "95a113af762dc8c4d32777926951d467"
   },
   {
     "Package": "dggridR",
@@ -3846,8 +3846,8 @@
   },
   {
     "Package": "read.abares",
-    "Version": "2.0.0",
-    "MD5sum": "a95b8d374f21328665ca145cdb37c37a"
+    "Version": "3.0.0",
+    "MD5sum": "6ba357df58bce208e9f4f6627dff6daa"
   },
   {
     "Package": "ReadDIM",
