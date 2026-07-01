@@ -5,11 +5,6 @@
     "MD5sum": "a7463e3c08870e5cf0824595315dd9d7"
   },
   {
-    "Package": "aboveR",
-    "Version": "1.0.0",
-    "MD5sum": "89d95effe64bcac189ee650e873e9aa4"
-  },
-  {
     "Package": "abstr",
     "Version": "0.4.2",
     "MD5sum": "6e2bd86624ea9b454b11090a2f93a9bd"
@@ -141,8 +136,8 @@
   },
   {
     "Package": "arcpullr",
-    "Version": "0.3.2",
-    "MD5sum": "e68072c25131d332e251c14338986579"
+    "Version": "0.3.5",
+    "MD5sum": "3d501b09a613d2258b7667ffb3c18bf8"
   },
   {
     "Package": "areal",
@@ -163,6 +158,11 @@
     "Package": "Argentum",
     "Version": "1.0.0",
     "MD5sum": "cd8509a97486af62ea1274f7f75626fc"
+  },
+  {
+    "Package": "ARPALData",
+    "Version": "2.0.0",
+    "MD5sum": "7cd1b19836502a0c5a17cb5a6283bdab"
   },
   {
     "Package": "artpack",
@@ -291,8 +291,8 @@
   },
   {
     "Package": "bean",
-    "Version": "0.2.0",
-    "MD5sum": "b36cf76d1cf1661450027ad1b18562a2"
+    "Version": "0.2.2",
+    "MD5sum": "9561fe131e24f64ea8e2dd78347babd9"
   },
   {
     "Package": "BeeBDC",
@@ -331,8 +331,8 @@
   },
   {
     "Package": "BIOMASS",
-    "Version": "2.2.7",
-    "MD5sum": "41b108ce35b629708d40c532fc86a7b0"
+    "Version": "2.2.7-1",
+    "MD5sum": "f7cf5d314611a9f47730417ac979f61a"
   },
   {
     "Package": "biomod2",
@@ -341,8 +341,8 @@
   },
   {
     "Package": "bioRad",
-    "Version": "0.11.0",
-    "MD5sum": "474750bc0edba625351edc1472d1e1a6"
+    "Version": "0.12.0",
+    "MD5sum": "1b5ff589a1979a51b569984d9ab453f9"
   },
   {
     "Package": "bioregion",
@@ -380,14 +380,19 @@
     "MD5sum": "6435db710a2a555646407ca9ddf1c14b"
   },
   {
+    "Package": "blisa",
+    "Version": "0.2.0",
+    "MD5sum": "4767699d7cd6e4dc89c92aef979f74bc"
+  },
+  {
     "Package": "blockCV",
     "Version": "3.2-0",
     "MD5sum": "71654a4d89ed8b1b5fc2315a50c84ddd"
   },
   {
     "Package": "BLSloadR",
-    "Version": "0.4.5",
-    "MD5sum": "b68f87a219951966da845fcb39420f96"
+    "Version": "0.4.6",
+    "MD5sum": "5b46900d9457cf3053dcf5106dcdd25c"
   },
   {
     "Package": "bluebike",
@@ -441,8 +446,8 @@
   },
   {
     "Package": "cancensus",
-    "Version": "0.6.0",
-    "MD5sum": "410b4f148a58209017da4f1dee0dfe37"
+    "Version": "0.6.1",
+    "MD5sum": "9762e476e50c93cb66be04dfba3975a4"
   },
   {
     "Package": "CAOP.RAA.2024",
@@ -491,8 +496,8 @@
   },
   {
     "Package": "cartographr",
-    "Version": "0.2.4",
-    "MD5sum": "8f5975b41d2a17122c2bb7c14f58b05f"
+    "Version": "0.2.5",
+    "MD5sum": "f009142340b0f9a96c18f297a1efc64d"
   },
   {
     "Package": "cartography",
@@ -501,13 +506,13 @@
   },
   {
     "Package": "CAST",
-    "Version": "1.0.4",
-    "MD5sum": "49270ecf766df76da4e30b03c52ad997"
+    "Version": "1.1.0",
+    "MD5sum": "f2398e028c1217c84259894ab7c21933"
   },
   {
     "Package": "CatastRo",
-    "Version": "1.0.1",
-    "MD5sum": "2c331f322aaeeb218f17242d2b32b76d"
+    "Version": "1.0.2",
+    "MD5sum": "4829c64b46605be3385b3cacb04abc05"
   },
   {
     "Package": "CCAMLRGIS",
@@ -585,11 +590,6 @@
     "MD5sum": "1f037c12af891c40c2ffc0cb0c4e68e1"
   },
   {
-    "Package": "chilemapas",
-    "Version": "0.4.0",
-    "MD5sum": "4308616151e63546414d55691eee9f9b"
-  },
-  {
     "Package": "chillR",
     "Version": "0.77",
     "MD5sum": "d50d4ff2a91b0692afce582bd39d0f29"
@@ -613,11 +613,6 @@
     "Package": "chopin",
     "Version": "0.9.9-5",
     "MD5sum": "91db2de797ef0a595a133e91b52bd6f9"
-  },
-  {
-    "Package": "choroplethr",
-    "Version": "5.0.1",
-    "MD5sum": "d553ea03fe8eca051f1cf6ba4e48128f"
   },
   {
     "Package": "circuitscaper",
@@ -645,14 +640,19 @@
     "MD5sum": "10780cacadc3d8c75f43733fef1b68af"
   },
   {
+    "Package": "clim4health",
+    "Version": "0.1.0",
+    "MD5sum": "0568694aa3c36d4852040fdce3be7618"
+  },
+  {
     "Package": "ClimaRep",
-    "Version": "1.0",
-    "MD5sum": "5db97fe2b50817588eb0c80511576181"
+    "Version": "1.1",
+    "MD5sum": "e46a62406d50a231efdad0e7de22e406"
   },
   {
     "Package": "climatehealth",
-    "Version": "1.0.1",
-    "MD5sum": "2749608c478d7be18029a3887b798bdd"
+    "Version": "1.0.2",
+    "MD5sum": "7a2c84ffc0f7798ebeb6ff7eb7dec502"
   },
   {
     "Package": "climateStability",
@@ -726,8 +726,8 @@
   },
   {
     "Package": "comorosmaps",
-    "Version": "1.0.0",
-    "MD5sum": "287e695cc796ec6b9f3f0d86dcba0558"
+    "Version": "1.6.1",
+    "MD5sum": "35622c627f31b6c6e67a9a74a42f1f6c"
   },
   {
     "Package": "CompositionalSR",
@@ -830,11 +830,6 @@
     "MD5sum": "af2f81830ae9c8eef87671ecc832c486"
   },
   {
-    "Package": "crownsegmentr",
-    "Version": "1.0.1",
-    "MD5sum": "732237ea9410c76746c9b17e23e8d985"
-  },
-  {
     "Package": "crstools",
     "Version": "1.0.0",
     "MD5sum": "cbaae1296ff408f6739eda6e653a186c"
@@ -873,11 +868,6 @@
     "Package": "csodata",
     "Version": "1.5.1",
     "MD5sum": "5e7e686231bf73ddafce82b016d1744e"
-  },
-  {
-    "Package": "CspStandSegmentation",
-    "Version": "0.2.0",
-    "MD5sum": "cd99a3acf57f2f5f1eb25cf70d314bf5"
   },
   {
     "Package": "csquares",
@@ -935,6 +925,11 @@
     "MD5sum": "f9b6e7e34cfcd20cd5b7face0548d8ef"
   },
   {
+    "Package": "DAST",
+    "Version": "0.1.0",
+    "MD5sum": "eb22bb728d2f3f733a92bbaa9550cb7f"
+  },
+  {
     "Package": "datamuseum",
     "Version": "0.1.0",
     "MD5sum": "b6355ac20ed8c3afe494a82e6e0be40a"
@@ -961,8 +956,8 @@
   },
   {
     "Package": "dbSpatial",
-    "Version": "0.1.1",
-    "MD5sum": "badbbf41119be1cc0e7882020ee4c588"
+    "Version": "0.1.2",
+    "MD5sum": "f437b62dabebbd6e43a980d74e8a9843"
   },
   {
     "Package": "dci",
@@ -1016,8 +1011,8 @@
   },
   {
     "Package": "Directional",
-    "Version": "7.5",
-    "MD5sum": "f78dc4ace3dc1acaddd7c0cfb20793d7"
+    "Version": "7.6",
+    "MD5sum": "9518185695c8e73397e8e66cd2329c27"
   },
   {
     "Package": "disaggregation",
@@ -1070,6 +1065,11 @@
     "MD5sum": "20c7e3d69cd06c87995176d1a28989f8"
   },
   {
+    "Package": "DonutMap",
+    "Version": "0.1.0",
+    "MD5sum": "1b7f8a2cd57330866801446fadbc78b9"
+  },
+  {
     "Package": "dots",
     "Version": "0.0.3",
     "MD5sum": "1377ef239b5d0064204cab691f4a5c5a"
@@ -1081,8 +1081,13 @@
   },
   {
     "Package": "dPCP",
-    "Version": "2.0.1",
-    "MD5sum": "b6113fb66c41bdcaa9163aa426b206ac"
+    "Version": "2.0.3",
+    "MD5sum": "661119f3f5c1fd1d4b2c51000bb0b517"
+  },
+  {
+    "Package": "dragmapr",
+    "Version": "0.2.0",
+    "MD5sum": "b306a83ad4298cf2f740f953ba3bc34f"
   },
   {
     "Package": "DRHotNet",
@@ -1091,8 +1096,8 @@
   },
   {
     "Package": "drhutools",
-    "Version": "1.1.0",
-    "MD5sum": "48d219ec8fb046ee7ef34b18d5e0dcc5"
+    "Version": "1.1.1",
+    "MD5sum": "627e513f5bde2d1752ce5bff526224b2"
   },
   {
     "Package": "dsims",
@@ -1101,8 +1106,8 @@
   },
   {
     "Package": "dsmSearch",
-    "Version": "1.2.2",
-    "MD5sum": "aa686d0e5a5dffcdb557aa38377b85d7"
+    "Version": "1.2.4",
+    "MD5sum": "f0b597488960fa6cb2ba7115fcd21eba"
   },
   {
     "Package": "dssd",
@@ -1111,8 +1116,8 @@
   },
   {
     "Package": "duckspatial",
-    "Version": "1.1.0",
-    "MD5sum": "f906b6aa037f5406ea5a23b47b51ea44"
+    "Version": "1.1.2",
+    "MD5sum": "7df670cb4404df69e79e92a0a8fbad25"
   },
   {
     "Package": "dwp",
@@ -1166,8 +1171,8 @@
   },
   {
     "Package": "ecospat",
-    "Version": "4.1.3",
-    "MD5sum": "7bbc7f892d9aa7267b050bef8dc163e7"
+    "Version": "4.1.4",
+    "MD5sum": "c995a58bf492950fa4704adf0adf5a12"
   },
   {
     "Package": "ecoTolerance",
@@ -1246,8 +1251,8 @@
   },
   {
     "Package": "enmpa",
-    "Version": "0.2.4",
-    "MD5sum": "64c4c144c9be78d482ef2fc6824f336f"
+    "Version": "0.2.5",
+    "MD5sum": "c79b2ee68dd3863e14d2db7bf956bf04"
   },
   {
     "Package": "enmSdmX",
@@ -1276,8 +1281,8 @@
   },
   {
     "Package": "epiR",
-    "Version": "2.0.93",
-    "MD5sum": "2f4a37f4a29eb8dd463ed8114fa7dd54"
+    "Version": "2.0.94",
+    "MD5sum": "6560ee926cf4720de38afe222e7f7b81"
   },
   {
     "Package": "episomer",
@@ -1376,8 +1381,8 @@
   },
   {
     "Package": "ezTrack",
-    "Version": "0.1.0",
-    "MD5sum": "f5d0fffdd2166c7edb22e14105fa23ec"
+    "Version": "0.1.1",
+    "MD5sum": "e5bc30801e0179e0c70074319043cb08"
   },
   {
     "Package": "fastbioclim",
@@ -1466,8 +1471,8 @@
   },
   {
     "Package": "FLightR",
-    "Version": "0.5.5",
-    "MD5sum": "6dcf312681a78f729b6ec3d2cc9126ae"
+    "Version": "0.5.6",
+    "MD5sum": "91f915f1452e839fde51c811f334f440"
   },
   {
     "Package": "florabr",
@@ -1491,8 +1496,8 @@
   },
   {
     "Package": "fmesher",
-    "Version": "0.7.0",
-    "MD5sum": "ee10ce7ae0d2ba9b3ab1306c3f20e81f"
+    "Version": "0.8.0",
+    "MD5sum": "bb1ef5f5fb76ea9b9912fffc91a639b4"
   },
   {
     "Package": "forcis",
@@ -1506,8 +1511,8 @@
   },
   {
     "Package": "ForestElementsR",
-    "Version": "2.2.0",
-    "MD5sum": "bde0b95e19bfc66723111fb460d9a27a"
+    "Version": "3.0.0",
+    "MD5sum": "cc59521acf6435f4ab8440103a0e0c3b"
   },
   {
     "Package": "ForestGapR",
@@ -1518,11 +1523,6 @@
     "Package": "ForestTools",
     "Version": "1.0.3",
     "MD5sum": "a12f868fa6d5186f859d481781c5b009"
-  },
-  {
-    "Package": "FORTLS",
-    "Version": "2.0.1",
-    "MD5sum": "671d2df9875eec35df07adfbac5d1582"
   },
   {
     "Package": "foto",
@@ -1541,8 +1541,8 @@
   },
   {
     "Package": "freestiler",
-    "Version": "0.1.7",
-    "MD5sum": "c4ace47527f07664cb1d9eee710d80f0"
+    "Version": "0.2.0",
+    "MD5sum": "619d5adcf1d9aebfb928841d64879312"
   },
   {
     "Package": "frheritage",
@@ -1651,8 +1651,8 @@
   },
   {
     "Package": "geoarrow",
-    "Version": "0.4.2",
-    "MD5sum": "79890742df2b184e71eb0d9f5d81abef"
+    "Version": "0.4.3",
+    "MD5sum": "9b1221bf448324eeb42f31b8b766ab60"
   },
   {
     "Package": "geobounds",
@@ -1661,13 +1661,13 @@
   },
   {
     "Package": "geobr",
-    "Version": "2.0.0",
-    "MD5sum": "6eeceda9be2bfe2e92378edfc28df669"
+    "Version": "2.0.1",
+    "MD5sum": "872a469b155344a37046b24627be4741"
   },
   {
     "Package": "geocausal",
-    "Version": "0.4.1",
-    "MD5sum": "776717b41fdb02ea0a9717579839edc8"
+    "Version": "0.4.2",
+    "MD5sum": "513477120e75328197ee4203f6c5ecda"
   },
   {
     "Package": "geocmeans",
@@ -1688,6 +1688,11 @@
     "Package": "geodata",
     "Version": "0.6-9",
     "MD5sum": "5ae770299bc3d4b83fdfc36e0a148056"
+  },
+  {
+    "Package": "GeoDensityR",
+    "Version": "0.1.2",
+    "MD5sum": "86a573061945bfa447ebd0f96d4f186b"
   },
   {
     "Package": "geodimension",
@@ -1716,8 +1721,8 @@
   },
   {
     "Package": "geoflow",
-    "Version": "1.2.1",
-    "MD5sum": "5b6df95066afed40953c684d8680d3c3"
+    "Version": "1.3.0",
+    "MD5sum": "047bdb520890ce4d31147f46ba3660c7"
   },
   {
     "Package": "geogenr",
@@ -1835,6 +1840,11 @@
     "MD5sum": "5bd20067ba3d8372c76d48eea86c8645"
   },
   {
+    "Package": "geovizr",
+    "Version": "1.0.0",
+    "MD5sum": "47ed01b6e98b81d508862dcbdc72f377"
+  },
+  {
     "Package": "GeoWeightedModel",
     "Version": "1.0.3",
     "MD5sum": "b95f892227654fe8edbb5bc695fe8fc4"
@@ -1876,23 +1886,13 @@
   },
   {
     "Package": "ggOceanMaps",
-    "Version": "2.3.0",
-    "MD5sum": "35851edd579e5558888e40aa712fbf2e"
+    "Version": "3.0.0",
+    "MD5sum": "2da193dc716cfb42f896c2bc0d85d616"
   },
   {
     "Package": "GGoutlieR",
     "Version": "1.0.2",
     "MD5sum": "36f89e9b484a1cbb66242e48d5db6b57"
-  },
-  {
-    "Package": "ggseg",
-    "Version": "2.1.1",
-    "MD5sum": "6e6dfb53318c4a6477e25da0054ca090"
-  },
-  {
-    "Package": "ggseg.formats",
-    "Version": "0.0.2",
-    "MD5sum": "221cce93a4a305c307019fb692fb7e97"
   },
   {
     "Package": "ggspatial",
@@ -1901,8 +1901,8 @@
   },
   {
     "Package": "GHCNr",
-    "Version": "1.4.6",
-    "MD5sum": "c1c02c892e151ffd2155305647776840"
+    "Version": "1.4.7",
+    "MD5sum": "31c0eb85c330e5a58d0568bfbef0bd3d"
   },
   {
     "Package": "GIFT",
@@ -1921,8 +1921,8 @@
   },
   {
     "Package": "giscoR",
-    "Version": "1.1.0",
-    "MD5sum": "d63935d7134b95b97d8aa2a9b40b830b"
+    "Version": "1.1.1",
+    "MD5sum": "b4b08ee35e564711421cb8a668ffa68c"
   },
   {
     "Package": "GISINTEGRATION",
@@ -2006,8 +2006,8 @@
   },
   {
     "Package": "greenSD",
-    "Version": "0.1.1",
-    "MD5sum": "f4111c69d317050815547aba3cc009d0"
+    "Version": "0.2.0",
+    "MD5sum": "c680e8d655528c4682560519a8aae64d"
   },
   {
     "Package": "griddy",
@@ -2016,8 +2016,8 @@
   },
   {
     "Package": "gridpattern",
-    "Version": "1.3.1",
-    "MD5sum": "407b5f0a0acea876aa514e5bd183c070"
+    "Version": "1.4.2",
+    "MD5sum": "92d939239ce43fbd810b6b8e4ba635ba"
   },
   {
     "Package": "growthTrendR",
@@ -2045,9 +2045,19 @@
     "MD5sum": "6201adb72c8b05b06c99cb736cc8ec25"
   },
   {
+    "Package": "gtfsrealtime",
+    "Version": "0.2.1",
+    "MD5sum": "55acd1ba335d768f531986d32203e98f"
+  },
+  {
     "Package": "gtfstools",
     "Version": "1.4.0",
     "MD5sum": "bd588bcd697ed96fbbe044525cbdd055"
+  },
+  {
+    "Package": "GTFSwizard",
+    "Version": "1.2.0",
+    "MD5sum": "7a6be00b0af645a42f5a8cb6b4ec0fee"
   },
   {
     "Package": "GWlasso",
@@ -2091,8 +2101,8 @@
   },
   {
     "Package": "h3sdm",
-    "Version": "0.1.4",
-    "MD5sum": "eeaa1458e08e1e3cab05dd7dde8c2c25"
+    "Version": "0.1.6",
+    "MD5sum": "0a5b2fb5f626bb65302d5fffe4c06968"
   },
   {
     "Package": "habtools",
@@ -2206,8 +2216,8 @@
   },
   {
     "Package": "IceSat2R",
-    "Version": "1.0.9",
-    "MD5sum": "539b90091aec2213c0fdb32e8a4d0da2"
+    "Version": "1.1.0",
+    "MD5sum": "12c074750abf94d7ae46a053a5337738"
   },
   {
     "Package": "icosa",
@@ -2240,14 +2250,14 @@
     "MD5sum": "1eb8c69a2f249a0873b17a16cc5386a9"
   },
   {
+    "Package": "imdR",
+    "Version": "0.1.1",
+    "MD5sum": "0d2ccd7933b945dbed9dfabb9667f9ee"
+  },
+  {
     "Package": "importinegi",
     "Version": "1.2.1",
     "MD5sum": "37ce46ad520c2c4e03a42a4803ee5b05"
-  },
-  {
-    "Package": "ineAtlas",
-    "Version": "0.1.4",
-    "MD5sum": "c0aee6ae189ebe7139aa42aae92e4911"
   },
   {
     "Package": "inecolr",
@@ -2311,8 +2321,8 @@
   },
   {
     "Package": "iRfcb",
-    "Version": "0.8.1",
-    "MD5sum": "4d5f14426bfe353b4ce4483acc8a75e6"
+    "Version": "0.9.0",
+    "MD5sum": "a3ba945abe85edbc6e222565e4809521"
   },
   {
     "Package": "isocat",
@@ -2520,16 +2530,6 @@
     "MD5sum": "45e2e4030675de3e2c6e22eddb7c580f"
   },
   {
-    "Package": "lidaRtRee",
-    "Version": "4.0.8",
-    "MD5sum": "10276e962e1cfb617778cdd0b9ca3dc6"
-  },
-  {
-    "Package": "lidR",
-    "Version": "4.3.2",
-    "MD5sum": "c2161d0eeaf376b73dc982a32cd86d17"
-  },
-  {
     "Package": "lifeR",
     "Version": "1.0.3",
     "MD5sum": "b5fbe82c85b5d6d734a47e59b9ec14e7"
@@ -2646,13 +2646,13 @@
   },
   {
     "Package": "mapgl",
-    "Version": "0.4.6",
-    "MD5sum": "a6e0306cf10d2d43ca8fae5eea0d414f"
+    "Version": "0.5.0",
+    "MD5sum": "307e073d49bd462f713db856f6d481f7"
   },
   {
     "Package": "mapi",
-    "Version": "1.1.4",
-    "MD5sum": "bac133dea54bd4d4d42813b01fd6ce72"
+    "Version": "1.1.5",
+    "MD5sum": "60c4d6649f2a8b05eb482a336c8bec06"
   },
   {
     "Package": "mapindia",
@@ -2720,9 +2720,14 @@
     "MD5sum": "dcf99a4a25bc95e3b1204fa480a641eb"
   },
   {
+    "Package": "mapsf.gui",
+    "Version": "0.1.0",
+    "MD5sum": "4a0bdd44d1b49690496dbdfbc84da4ca"
+  },
+  {
     "Package": "mapSpain",
-    "Version": "1.1.0",
-    "MD5sum": "b49f44bf2c127d041851612e2b0bbf9a"
+    "Version": "1.2.0",
+    "MD5sum": "92add0fc96e9d706ed08bc403a0d5e39"
   },
   {
     "Package": "mapsRinteractive",
@@ -2766,8 +2771,8 @@
   },
   {
     "Package": "MatchingPursuit",
-    "Version": "1.0.1",
-    "MD5sum": "865dac6f2a9f5c4e30dac5b294f58727"
+    "Version": "1.1.0",
+    "MD5sum": "fbf0e4249d99da088e557911102aad4e"
   },
   {
     "Package": "MaxentVariableSelection",
@@ -2971,8 +2976,8 @@
   },
   {
     "Package": "movecost",
-    "Version": "2.2",
-    "MD5sum": "343eb1e10fd6460181d8cb084de63c5c"
+    "Version": "3.0.0",
+    "MD5sum": "a4797202a5831991ac016464f852f044"
   },
   {
     "Package": "movedesign",
@@ -2996,8 +3001,8 @@
   },
   {
     "Package": "MRG",
-    "Version": "0.3.25",
-    "MD5sum": "a0bb6ec736725c3c5bdd52fd6000c444"
+    "Version": "0.3.29",
+    "MD5sum": "909f0ba1f47821eb2a21f72f33ba3cff"
   },
   {
     "Package": "MTA",
@@ -3100,9 +3105,9 @@
     "MD5sum": "ff9fab228ce036606222826b833d6c26"
   },
   {
-    "Package": "NicheBarcoding",
-    "Version": "1.0",
-    "MD5sum": "c66675b25e07fecf731458f5534a2fd5"
+    "Package": "nicheR",
+    "Version": "0.1.0",
+    "MD5sum": "149154c70cb69c58cd1d08f640523db7"
   },
   {
     "Package": "nichevol",
@@ -3130,9 +3135,14 @@
     "MD5sum": "c25872e25b58a9b7d34df90f17cd3e7e"
   },
   {
+    "Package": "nodiv",
+    "Version": "1.4.4",
+    "MD5sum": "b4a47f9495f8ffc8226e279ef269e491"
+  },
+  {
     "Package": "nominatimlite",
-    "Version": "0.5.0",
-    "MD5sum": "e6b63cd0958ed33a23d0e59458617407"
+    "Version": "0.6.0",
+    "MD5sum": "a3396c5e8ad71f40e2322e64ffb8ebd0"
   },
   {
     "Package": "nosoi",
@@ -3316,13 +3326,13 @@
   },
   {
     "Package": "paisaje",
-    "Version": "0.2.0",
-    "MD5sum": "59e15fe23f617dc4f32210eaef393212"
+    "Version": "0.3.0",
+    "MD5sum": "2d36796ac99056532f67e68638380e12"
   },
   {
     "Package": "palaeoverse",
-    "Version": "1.4.0",
-    "MD5sum": "11093872d6609728905d30a36bd46bbc"
+    "Version": "1.5.0",
+    "MD5sum": "983f3005a4c952c62ad07d3497cd5eea"
   },
   {
     "Package": "paleobioDB",
@@ -3426,8 +3436,8 @@
   },
   {
     "Package": "PiC",
-    "Version": "1.2.7",
-    "MD5sum": "c464252e814973e6ab52bfa4790f0cf8"
+    "Version": "3.3.1",
+    "MD5sum": "c2f266ad60776d921a8087be329f3204"
   },
   {
     "Package": "pkmapr",
@@ -3571,8 +3581,8 @@
   },
   {
     "Package": "prioritizrdata",
-    "Version": "0.3.2",
-    "MD5sum": "2bdb457b61edaa95b6c998fd005a99c8"
+    "Version": "0.3.3",
+    "MD5sum": "36b28ba4591c366d72ff585f25d4a60e"
   },
   {
     "Package": "prism",
@@ -3746,8 +3756,8 @@
   },
   {
     "Package": "rasterpic",
-    "Version": "0.5.0",
-    "MD5sum": "073ba07ee88b187374a75e9a06ad206c"
+    "Version": "0.5.1",
+    "MD5sum": "5d0e2f457a286e5d566d2611c1f6e110"
   },
   {
     "Package": "rasterVis",
@@ -3761,8 +3771,8 @@
   },
   {
     "Package": "rayrender",
-    "Version": "0.38.10",
-    "MD5sum": "e90d68c7dafab60dbe58ffe4e6fd21df"
+    "Version": "0.41.3",
+    "MD5sum": "8fb887666b81577c0e90becb4063b40a"
   },
   {
     "Package": "rayshader",
@@ -3780,11 +3790,6 @@
     "MD5sum": "191a25ed679dbbbc71ff09f3dcf9c454"
   },
   {
-    "Package": "rcaiman",
-    "Version": "2.0.1",
-    "MD5sum": "11f3908f396297f2ae1b08714ae58c79"
-  },
-  {
     "Package": "RcamelsCL",
     "Version": "0.2-0",
     "MD5sum": "49b7ac3f78811d53ad9348b3b1434009"
@@ -3793,11 +3798,6 @@
     "Package": "rcarbon",
     "Version": "1.5.2",
     "MD5sum": "6e5584d3ccd4680d7263bef6f20d761c"
-  },
-  {
-    "Package": "RcensusPkg",
-    "Version": "0.1.5",
-    "MD5sum": "4281699cb0c61b54f66010ff7a81ca32"
   },
   {
     "Package": "RCGLS",
@@ -3815,11 +3815,6 @@
     "MD5sum": "cde20421ab8a3133c8d389ea0dce2c0e"
   },
   {
-    "Package": "rcontroll",
-    "Version": "0.1.2",
-    "MD5sum": "02d69e49ea1b264b4b927ae0aa7332cc"
-  },
-  {
     "Package": "rcrimeanalysis",
     "Version": "0.5.0",
     "MD5sum": "f5ec0c1a28a25f8a758668b591388b9c"
@@ -3831,8 +3826,8 @@
   },
   {
     "Package": "RCzechia",
-    "Version": "1.12.8",
-    "MD5sum": "b42818a0490c67525428d546e390a53e"
+    "Version": "1.12.10",
+    "MD5sum": "04e541a7be9c2f365982389b0ff7ade2"
   },
   {
     "Package": "rdhs",
@@ -3926,8 +3921,8 @@
   },
   {
     "Package": "remap",
-    "Version": "0.3.2",
-    "MD5sum": "cabd355aba7bb1f5d305ba0f90562e7f"
+    "Version": "0.3.3",
+    "MD5sum": "aa620ae1027c18d35a1b519a50316a3b"
   },
   {
     "Package": "remote",
@@ -3936,8 +3931,8 @@
   },
   {
     "Package": "rerddapUtils",
-    "Version": "1.0.1",
-    "MD5sum": "596dee88fa50c502a2da30d875fbbe77"
+    "Version": "1.0.2",
+    "MD5sum": "0e1c8951bee42ec8d6b25cf52ca56235"
   },
   {
     "Package": "rerddapXtracto",
@@ -3950,14 +3945,9 @@
     "MD5sum": "0ec3f219620dd8ff2f4c6d73f22d9bf3"
   },
   {
-    "Package": "restoptr",
-    "Version": "1.1.1",
-    "MD5sum": "a30071bc900fa96ac2de324e1ea85fc5"
-  },
-  {
     "Package": "rFIA",
-    "Version": "1.1.3",
-    "MD5sum": "5800bf533b73bfa854fcd4c16ed51cf9"
+    "Version": "1.1.4",
+    "MD5sum": "678eb900aefbc1ea2d0eb10ce4f052bd"
   },
   {
     "Package": "rflexscan",
@@ -4175,6 +4165,11 @@
     "MD5sum": "51046eef8e955feae9a52993878d41df"
   },
   {
+    "Package": "rrstools",
+    "Version": "1.1.0",
+    "MD5sum": "ce339de3092dca230e1a47251a15cdc5"
+  },
+  {
     "Package": "Rsagacmd",
     "Version": "0.4.3",
     "MD5sum": "22a57aad8062b7d7f39ebc0d3461fd2f"
@@ -4235,6 +4230,11 @@
     "MD5sum": "61a9578ccf7ae7e50160bacb81f43748"
   },
   {
+    "Package": "rts2",
+    "Version": "1.0.3",
+    "MD5sum": "43723cb6107c3ff7bbb61a9840a47dc7"
+  },
+  {
     "Package": "RuHere",
     "Version": "1.0.1",
     "MD5sum": "f6ec1175c64b79b9148edbaad89a7766"
@@ -4245,19 +4245,14 @@
     "MD5sum": "874ee9fa7f9e08f8e7f6aed30b59ddf1"
   },
   {
-    "Package": "RWmisc",
-    "Version": "0.1.2",
-    "MD5sum": "76bc55d300c64df074d8576445b36165"
-  },
-  {
     "Package": "rworldmap",
     "Version": "1.3-8",
     "MD5sum": "c9c1708704266d4671fe5ec00a8aa0dd"
   },
   {
     "Package": "s2",
-    "Version": "1.1.9",
-    "MD5sum": "53662e8e56dcf5acd0e932e8bad562e3"
+    "Version": "1.1.11",
+    "MD5sum": "864f4ab39253987f1ac54a26762672c8"
   },
   {
     "Package": "S4DM",
@@ -4333,6 +4328,11 @@
     "Package": "SchoolDataIT",
     "Version": "0.2.13",
     "MD5sum": "2c452ce8170601caa968e7f9b9dc4489"
+  },
+  {
+    "Package": "sdc.redistribute",
+    "Version": "0.1.0",
+    "MD5sum": "f3d27c63c948626ab8ca3d6f6baf2039"
   },
   {
     "Package": "sdcSpatial",
@@ -4511,8 +4511,8 @@
   },
   {
     "Package": "SHARK4R",
-    "Version": "1.1.1",
-    "MD5sum": "381a85868fea050775e383cdfe7bf714"
+    "Version": "1.2.0",
+    "MD5sum": "b9361aeb4b729576a242d774fa7fa9a0"
   },
   {
     "Package": "shoredate",
@@ -4575,6 +4575,11 @@
     "MD5sum": "365bbf2ac6ed08c05084bae8a7c7dc2a"
   },
   {
+    "Package": "slopes",
+    "Version": "2.0.0",
+    "MD5sum": "5f36237012fa751902c5ba7aabbf26b3"
+  },
+  {
     "Package": "slxr",
     "Version": "0.1.1",
     "MD5sum": "8059e38772be69e41da96045008d98f6"
@@ -4616,8 +4621,8 @@
   },
   {
     "Package": "soilassessment",
-    "Version": "1.3.0",
-    "MD5sum": "8701fbffaf9a39cc4630a5077481dcbc"
+    "Version": "1.3.1",
+    "MD5sum": "5d11341423c4689b0d4c45099634e245"
   },
   {
     "Package": "SoilSaltIndex",
@@ -4646,13 +4651,8 @@
   },
   {
     "Package": "spanishoddata",
-    "Version": "0.2.5",
-    "MD5sum": "2ee4e953daa79d38b0724d5bc3c1720b"
-  },
-  {
-    "Package": "spanner",
-    "Version": "1.0.4",
-    "MD5sum": "651a677ee7f3c3cf9f5b13002b6cbfe8"
+    "Version": "0.2.6",
+    "MD5sum": "009aac00c08801e9d9589acec2b86246"
   },
   {
     "Package": "sparrpowR",
@@ -4746,8 +4746,8 @@
   },
   {
     "Package": "spatialrisk",
-    "Version": "0.8.0",
-    "MD5sum": "e082f6ac072ac65f01dad4469d50abb7"
+    "Version": "0.8.1",
+    "MD5sum": "25f9792faabd9b887fc2b4995835d296"
   },
   {
     "Package": "spatialsample",
@@ -4773,6 +4773,11 @@
     "Package": "spbal",
     "Version": "1.0.1",
     "MD5sum": "f6d81c48f0f06343cec74db100855a6c"
+  },
+  {
+    "Package": "spboost",
+    "Version": "0.7.0",
+    "MD5sum": "5fbefb2705d7aad668218338c60b3b57"
   },
   {
     "Package": "spDates",
@@ -4831,8 +4836,8 @@
   },
   {
     "Package": "spmodel",
-    "Version": "0.12.0",
-    "MD5sum": "bd5e5b41d6505f6f684c3d0b818dbbe1"
+    "Version": "0.13.0",
+    "MD5sum": "9b5b63fb120fddc35b39774ebd33517b"
   },
   {
     "Package": "spmoran",
@@ -4861,8 +4866,8 @@
   },
   {
     "Package": "SppTrend",
-    "Version": "0.4",
-    "MD5sum": "f3e1aeb820082aac005372b28f911970"
+    "Version": "0.5",
+    "MD5sum": "69651a3d5d2c803413185104824b45d9"
   },
   {
     "Package": "spqdep",
@@ -4903,6 +4908,11 @@
     "Package": "SSIMmap",
     "Version": "0.4.0",
     "MD5sum": "37d9958f83178dcb6cd972ea3b6a159a"
+  },
+  {
+    "Package": "ssmooth",
+    "Version": "0.1.0",
+    "MD5sum": "5cbf61c401df060d350cf182ca87c87d"
   },
   {
     "Package": "SSN2",
@@ -5030,6 +5040,11 @@
     "MD5sum": "348f90f33dce840f9967518bfe9bc223"
   },
   {
+    "Package": "SUNGEO",
+    "Version": "1.4.0",
+    "MD5sum": "5d5343927b11c8691483c5184808adc2"
+  },
+  {
     "Package": "suntools",
     "Version": "1.1.0",
     "MD5sum": "04a0c4a665c6fc20fbfba0399305edb3"
@@ -5051,8 +5066,8 @@
   },
   {
     "Package": "surveyPrev",
-    "Version": "1.0.0",
-    "MD5sum": "5672de6bcf28241ae7a68913cb738f39"
+    "Version": "2.0.0",
+    "MD5sum": "32d505c8da7facd37d8019cf1f3e56ab"
   },
   {
     "Package": "surveyvoi",
@@ -5110,14 +5125,19 @@
     "MD5sum": "82b196da2e2dcb96b8f65363cf0f5a9d"
   },
   {
+    "Package": "TemporalModelR",
+    "Version": "0.2.0",
+    "MD5sum": "8ced0f2b5674ee7c97d168259d1267cd"
+  },
+  {
     "Package": "tenm",
     "Version": "0.5.1",
     "MD5sum": "0ecbe27e45d061682c7702a0b6cff318"
   },
   {
     "Package": "terra",
-    "Version": "1.9-27",
-    "MD5sum": "2a1aa70d679256f92161c1a4430c6ed8"
+    "Version": "1.9-34",
+    "MD5sum": "6ebdff28ed268f9a19696015d6d501e0"
   },
   {
     "Package": "terrainr",
@@ -5171,8 +5191,8 @@
   },
   {
     "Package": "tidyterra",
-    "Version": "1.1.0",
-    "MD5sum": "834596347c12ce24682f0bd4377eacbc"
+    "Version": "1.2.0",
+    "MD5sum": "acc04d466689a4b477f7f3a51fdef7f8"
   },
   {
     "Package": "tidytransit",
@@ -5206,8 +5226,8 @@
   },
   {
     "Package": "tinyVAST",
-    "Version": "1.6.0",
-    "MD5sum": "bcf7afff4079fed472b2c749c93630c0"
+    "Version": "1.6.1",
+    "MD5sum": "c0879c6e2edb57873263883b885b756a"
   },
   {
     "Package": "tissot",
@@ -5216,8 +5236,8 @@
   },
   {
     "Package": "tmap",
-    "Version": "4.3",
-    "MD5sum": "408db355e0ad26676a43d31eb96765d5"
+    "Version": "4.4-1",
+    "MD5sum": "562a3af72e51d9e111fdabc797d05e90"
   },
   {
     "Package": "tmap.cartogram",
@@ -5226,18 +5246,23 @@
   },
   {
     "Package": "tmap.glyphs",
-    "Version": "0.1-1",
-    "MD5sum": "f17e9a99852e9807887c0c203810a819"
+    "Version": "0.2",
+    "MD5sum": "a06f53377cd46f3639d5bc841ecec1cd"
   },
   {
     "Package": "tmap.mapgl",
-    "Version": "0.2-1",
-    "MD5sum": "df2ecdd9b185231e618bc8e26095e6d3"
+    "Version": "0.3",
+    "MD5sum": "827d615815686ec1e1ca35f33e559b30"
   },
   {
     "Package": "tmap.networks",
-    "Version": "0.2",
-    "MD5sum": "06bb434ccbf2252b06c33e254c1b94b0"
+    "Version": "0.2-1",
+    "MD5sum": "31346fcf96c2dfb343036dd6b9153f58"
+  },
+  {
+    "Package": "tmap.sources",
+    "Version": "0.1",
+    "MD5sum": "fef83dcddb7d3406aef7aac72e2d3464"
   },
   {
     "Package": "tmaptools",
@@ -5256,8 +5281,8 @@
   },
   {
     "Package": "tongfen",
-    "Version": "0.3.6",
-    "MD5sum": "d3672d3bc896fe517271638dda1e26a3"
+    "Version": "0.3.7",
+    "MD5sum": "e60993b8cf6e645b3ac1d145e7f381eb"
   },
   {
     "Package": "topoDistance",
@@ -5330,11 +5355,6 @@
     "MD5sum": "0643d4e1bf96f0bad4d34e7d9f674b1a"
   },
   {
-    "Package": "tReeTraits",
-    "Version": "0.1.2",
-    "MD5sum": "e0c0bc2162c898e94a473e5adff83dcb"
-  },
-  {
     "Package": "trigpoints",
     "Version": "1.0.0",
     "MD5sum": "6b10e4852efa93e0a75251401610fdcb"
@@ -5376,8 +5396,8 @@
   },
   {
     "Package": "UKFE",
-    "Version": "2.0.1",
-    "MD5sum": "50a30f375fe59dfa80d689ba385b0d34"
+    "Version": "2.0.2",
+    "MD5sum": "7018dbbc0978b2d7717dcd27897f5d8b"
   },
   {
     "Package": "ulex",
@@ -5456,8 +5476,8 @@
   },
   {
     "Package": "viewscape",
-    "Version": "2.0.2",
-    "MD5sum": "3174dd2231a7de65cb35cd108e93a5cd"
+    "Version": "3.0.0",
+    "MD5sum": "6f93eb96bda53901f98b836083bf7b46"
   },
   {
     "Package": "virtualspecies",
@@ -5478,11 +5498,6 @@
     "Package": "voluModel",
     "Version": "0.2.4",
     "MD5sum": "76903cc4c6853e2a13eb275b3e9e48b9"
-  },
-  {
-    "Package": "vostokR",
-    "Version": "0.2.1",
-    "MD5sum": "3b1d548680b02579a55173b8751769b3"
   },
   {
     "Package": "VoxR",
@@ -5606,8 +5621,8 @@
   },
   {
     "Package": "wpeR",
-    "Version": "0.1.0",
-    "MD5sum": "8d56ac5054146c3e054835a662f86adc"
+    "Version": "0.2.0",
+    "MD5sum": "e5e7dfe8c440a6df11b28075362286cc"
   },
   {
     "Package": "zipcodeR",
@@ -5616,8 +5631,8 @@
   },
   {
     "Package": "zippeR",
-    "Version": "0.1.2",
-    "MD5sum": "d1de5091bf8942d5fc1764b8d8995b21"
+    "Version": "0.2.0",
+    "MD5sum": "b2d9fad64587b15c4481f4e184a3fb31"
   },
   {
     "Package": "ZonationR",
